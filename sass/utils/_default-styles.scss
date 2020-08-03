@@ -1,0 +1,56 @@
+html {
+	box-sizing: border-box;
+}
+* {
+	box-sizing: inherit;
+	&:focus {
+		outline: none;
+	}
+	&::before,
+	&::after {
+		box-sizing: inherit;
+	}
+}
+body {
+	font-family: $primary-font;
+	color: $main-text-color;
+	letter-spacing: 0.02em;
+	font-style: normal;
+	font-weight: 400;
+}
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+%reset-link {
+	display: inline-block;
+
+	text-decoration: none;
+}
+%reset-list {
+	margin: 0;
+	padding: 0;
+
+	list-style-type: none;
+}
+
+%content-container {
+	margin-left: auto;
+	margin-right: auto;
+
+	padding: 84px 30px;
+
+	@media screen and (min-width: $mobile) {
+		width: $mobile;
+	}
+	@media screen and (min-width: $tablet) {
+		width: $tablet;
+		padding: 100px 40px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: $desktop;
+		padding: 130px 55px;
+	}
+}
