@@ -8,6 +8,8 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="./css/slick.css">
+		<link rel="stylesheet" href="./css/slick-theme.css">
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
@@ -18,8 +20,23 @@
 						<use href="./images/sprite.svg#icon-logo"></use>
 					</svg>
 				</a>
-				<!--icon gamburger-->
-				<div class="header-wrapper">
+				<!-- <button
+				type="button"
+				class="menu-button"
+				aria-expanded="false"
+				aria-controls="menu-container"
+				data-menu-button
+			  >
+				<svg
+				  width="40"
+				  height="40"
+				  aria-label="Переключатель мобильного меню"
+				>
+				  <use class="icon-cross" href="./images/sprite.svg#icon-menu-close"></use>
+				  <use class="icon-menu" href=".images/sprite.svg#icon-menu-open"></use>
+				</svg>
+			 	</button> -->
+				<div class="header-wrapper" >
 					<ul class="header-menu">
 						<li class="header-menu-item">
 							<a class="header-menu-link" href="#">
@@ -92,6 +109,11 @@
 				</p>
 			</div>
 			<!--slider-navigation menu-->
+			<div class="header-slider">
+				<div></div>
+				<div></div>
+				<div></div>
+			  </div>
 			<div class="header-transition">
 				<a href="#" class="transition-link">
 					Назад
@@ -230,5 +252,8 @@
 				</ul>
 			</section>
 		</main>
+	<script src="./js/jquery-3.5.1.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/main.js"></script>
 	</body>
 </html>
