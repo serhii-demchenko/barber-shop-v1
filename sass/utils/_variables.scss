@@ -2,9 +2,16 @@ $main-text-color: #555555;
 $title-text-color: #303030;
 $accent-color: #ff6c00;
 
+$primary-background-color: #ffffff;
+$secondary-background-color: #f7f7f7;
+$dark-background-color: #191c26;
+
 $primary-font: "Open Sans", sans-serif;
 $secondary-font: "Raleway", sans-serif;
 
 $mobile: 480px;
 $tablet: 768px;
 $desktop: 1280px;
+
+$animation-duration: 250ms;
+$animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

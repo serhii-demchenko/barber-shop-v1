@@ -1,0 +1,14 @@
+.decorative-line {
+	position: relative;
+	padding-left: 80px;
+	color: $title-text-color;
+	&:before {
+		content: "";
+		position: absolute;
+		width: 60px;
+		height: 1px;
+		background-color: currentColor;
+		top: 6px;
+		left: 0;
+	}
+}

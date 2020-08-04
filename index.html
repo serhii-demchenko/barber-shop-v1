@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,354 @@
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
-		<form class="appointment-form">
+	<header class="header page-header">
+			<nav class="header-navigation">
+				<a href="index.html" class="header-logo logo">
+					<svg class="header-logo-icon" width="69" height="55">
+						<use href="./images/sprite.svg#icon-logo"></use>
+					</svg>
+				</a>
+				<!--icon gamburger-->
+				<div class="header-wrapper">
+					<ul class="header-menu">
+						<li class="header-menu-item">
+							<a class="header-menu-link" href="#">
+								О нас
+							</a>
+						</li>
+						<li class="header-menu-item">
+							<a class="header-menu-link" href="#">
+								Услуги и цены
+							</a>
+						</li>
+						<li class="header-menu-item">
+							<a class="header-menu-link" href="#">
+								Мастера
+							</a>
+						</li>
+						<li class="header-menu-item">
+							<a class="header-menu-link" href="#">
+								Контакты
+							</a>
+						</li>
+					</ul>
+					<ul class="header-contacts">
+						<li class="header-contacts-item">
+							<a href="tel:380441111111" class="header-contacts-link">
+								+38 044 111 11 11
+							</a>
+						</li>
+						<li class="header-contacts-item">
+							<button class="header-contacts-button light-button" type="button">
+								<span>онлайн-запись</span>
+							</button>
+						</li>
+					</ul>
+					<ul class="header-socials">
+						<li class="header-socials-item">
+							<a
+								class="header-socials-link"
+								title="instagram"
+								href="https://www.instagram.com/"
+								target="_blank"
+								rel="nofollow external"
+							>
+								Instagram
+							</a>
+						</li>
+						<li class="header-socials-item">
+							<a
+								class="header-socials-link"
+								title="youtube"
+								href="https://www.youtube.com/"
+								target="_blank"
+								rel="nofollow external"
+							>
+								Youtube
+							</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="header-content">
+				<p class="header-content-subtitle">
+					A hair salon for men in Kyiv
+				</p>
+				<h1 class="header-title">
+					BarberShop
+				</h1>
+				<p class="header-content-text">
+					Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+				</p>
+			</div>
+			<!--slider-navigation menu-->
+			<div class="header-transition">
+				<a href="#" class="transition-link">
+					Назад
+				</a>
+				<a href="#" class="transition-link">
+					Вперед
+				</a>
+			</div>
+		</header>
+		<main>
+			<section class="about-us">
+				<div>
+					<img src="" alt="photo1" />
+					<img src="" alt="photo2" />
+				</div>
+				<div>
+					<p class="subtitle-text">О нас</p>
+					<h2 class="section-title">Лучший Барбершоп твоего города</h2>
+					<p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
+					<p>
+						Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки
+						нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
+						волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
+					</p>
+					<button>онлайн-запись</button>
+				</div>
+			</section>
+			<!--services and prices-->
+			<section class="prices">
+				<div class="subtitle">
+					<div class="subtitle-line"></div>
+					<p class="subtitle-text">Проведи время в компании лучших мастеров</p>
+				</div>
+
+				<h2 class="section-title">Услуги и цены</h2>
+
+				<ul class="prices-list">
+					<li class="prices-item">
+						<span>Мужская стрижкаот</span>
+						<div class="prices-line"></div>
+						<span>300 грн.</span>
+					</li>
+
+					<li class="prices-item">
+						<span>Стрижка бородыот</span>
+						<div class="prices-line"></div>
+						<span>200 грн.</span>
+					</li>
+
+					<li class="prices-item">
+						<span>Стрижка усовот</span>
+						<div class="prices-line"></div>
+						<span>200 грн.</span>
+					</li>
+
+					<li class="prices-item">
+						<span>Бритье опасной бритвойот</span>
+						<div class="prices-line"></div>
+						<span>200 грн.</span>
+					</li>
+
+					<li class="prices-item">
+						<span>Cтрижка у стажераот</span>
+						<div class="prices-line"></div>
+						<span>50 грн.</span>
+					</li>
+
+					<li class="prices-item">
+						<span>Стрижка под насадкуот</span>
+						<div class="prices-line"></div>
+						<span>200 грн.</span>
+					</li>
+
+					<li class="prices-item">
+						<span>Детская стрижка (до 12 лет)от</span>
+						<div class="prices-line"></div>
+						<span>300 грн.</span>
+					</li>
+
+					<li class="prices-item">
+						<span>Камуфлирование сединыот</span>
+						<div class="prices-line"></div>
+						<span>200 грн.</span>
+					</li>
+				</ul>
+
+				<button type="submit">онлайн-запись</button>
+			</section>
+
+			<!--Why-us section-->
+			<section class="why-us">
+				<p class="why-us-subtitle decorative-line">старая традиционная школа</p>
+				<h1 class="why-us-title">Почему приходят именно к нам?</h1>
+				<p class="why-us-description">
+					О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
+				</p>
+				<ul class="why-us-data-list">
+					<li class="why-us-list-item">
+						<p class="why-us-text-unit">
+							<span class="why-us-digit">
+								600
+								<sup class="why-us-plus">+</sup>
+								<!-- Еще можно сделать этот + псевдоэлементом after, 
+								оставила пока в разметке, потом, может уберу при стилизации -->
+							</span>
+							Довольных клиентов в день
+						</p>
+					</li>
+					<li class="why-us-list-item">
+						<p class="why-us-text-unit">
+							<span class="why-us-digit">
+								50
+								<sup class="why-us-plus">+</sup>
+							</span>
+							Наград за отличный сервис
+						</p>
+					</li>
+					<li class="why-us-list-item">
+						<p class="why-us-text-unit">
+							<span class="why-us-digit">
+								20
+								<sup class="why-us-plus">+</sup>
+							</span>
+							Лучших мастеров Киева
+						</p>
+					</li>
+					<li class="why-us-list-item">
+						<p class="why-us-text-unit">
+							<span class="why-us-digit">
+								100
+								<sup class="why-us-plus">+</sup>
+							</span>
+							Подарков постоянным клиентам
+						</p>
+					</li>
+				</ul>
+			</section>
+      	<section>
+			<h4>для настоящих ценителей атмосферы</h4>
+			<h1>Наши мастера</h1>
+			<ul>
+				<li>
+					<img src="images/master1-l.jpg" alt="">
+					<h2>John Smith</h2>
+					<span>Extreme Barber</span>
+					<ul>
+						<li>
+							<a href="" aria-label="Инстаграмм">
+								<svg>
+									<use href=".images/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" aria-label="Твиттер">
+								<svg>
+									<use href=".images/sprite.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" aria-label="Фейсбук">
+								<svg>
+									<use href=".images/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" aria-label="Линкедин">
+								<svg>
+									<use href=".images/sprite.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<img src="images/master2-l.jpg" alt="">
+					<h2>Michele Doe</h2>
+					<span>Extreme Barber</span>
+					<ul>
+						<li>
+							<a href="" aria-label="Инстаграмм">
+								<svg>
+									<use href=".images/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" aria-label="Твиттер">
+								<svg>
+									<use href=".images/sprite.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" aria-label="Фейсбук">
+								<svg>
+									<use href=".images/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" aria-label="Линкедин">
+								<svg>
+									<use href=".images/sprite.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<img src="images/master3-l.jpg" alt="">
+					<h2>Alan Black</h2>
+					<span>Extreme Barber</span>
+					<ul>
+						<li>
+							<a href="" aria-label="Инстаграмм">
+								<svg>
+									<use href=".images/sprite.svg#icon-instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" aria-label="Твиттер">
+								<svg>
+									<use href=".images/sprite.svg#icon-twitter"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" aria-label="Фейсбук">
+								<svg>
+									<use href=".images/sprite.svg#icon-facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li>
+							<a href="" aria-label="Линкедин">
+								<svg>
+									<use href=".images/sprite.svg#icon-linkedin"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</section>
+		<section>
+			<h4>На латинском языке “барба” означает “борода”</h4>
+			<ul>
+				<li>
+					<img src="images/portfolio1-l.jpg" alt="">
+				</li>
+				<li>
+					<img src="images/portfolio2-l.jpg" alt="">
+				</li>
+				<li>
+					<img src="images/portfolio3-l.jpg" alt="">
+				</li>
+				<li>
+					<img src="images/portfolio4-l.jpg" alt="">
+				</li>
+			</ul>
+		</section>
+    </main>
+  <form class="appointment-form">
 			<h2 class="appointment-title">Онлайн-запись</h2>
 			<label class="appointment-field">
 				<input class="appointment-input" type="text" name="name" placeholder=" " autofocus />
