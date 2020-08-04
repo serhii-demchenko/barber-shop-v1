@@ -37,3 +37,13 @@ https://swok-kh.github.io/barber-shop-v1/
 %reset-list - убирает декорацию списка
 
 %content-container - обертка для секции (применено центрирование, прописвны все медиаусловия для всех разрешений)
+
+# Кнопки
+
+.dark-button - на темном фоне
+
+.light-button - на светлом фоне
+
+# Декоративная линия
+
+.decorative-line

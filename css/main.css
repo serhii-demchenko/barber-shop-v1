@@ -159,6 +159,17 @@ body {
   font-weight: 400;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -195,5 +206,21 @@ img {
 
 .light-button {
   color: #303030;
+}
+
+.decorative-line {
+  position: relative;
+  padding-left: 80px;
+  color: #303030;
+}
+
+.decorative-line:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  top: 6px;
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */
