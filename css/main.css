@@ -153,14 +153,74 @@ html {
 body {
   font-family: "Open Sans", sans-serif;
   color: #555555;
+  background-color: #ffffff;
   letter-spacing: 0.02em;
   font-style: normal;
   font-weight: 400;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.dark-button, .light-button {
+  display: block;
+  margin: 0;
+  padding: 12px 20px;
+  min-width: 160px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.dark-button:hover, .light-button:hover, .dark-button:focus, .light-button:focus {
+  color: #ffffff;
+  background-color: #ff6c00;
+}
+
+.dark-button {
+  color: #ffffff;
+}
+
+.light-button {
+  color: #303030;
+}
+
+.decorative-line {
+  position: relative;
+  padding-left: 80px;
+  color: #303030;
+}
+
+.decorative-line:before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 1px;
+  background-color: currentColor;
+  top: 6px;
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */

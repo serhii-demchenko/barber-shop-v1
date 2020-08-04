@@ -1,0 +1,36 @@
+%button {
+	display: block;
+	margin: 0;
+	padding: 12px 20px;
+	min-width: 160px;
+
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: transparent;
+	border: 1px solid $accent-color;
+	border-radius: 25px;
+
+	cursor: pointer;
+
+	transition: color $animation-duration $animation-timing-function,
+		background-color $animation-duration $animation-timing-function;
+
+	&:hover,
+	&:focus {
+		color: #ffffff;
+		background-color: $accent-color;
+	}
+}
+.dark-button {
+	@extend %button;
+	color: #ffffff;
+}
+.light-button {
+	@extend %button;
+	color: $title-text-color;
+}
