@@ -279,6 +279,41 @@ img {
   background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/prices/prices-mob.jpg);
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .prices {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../../images/prices/prices-mob2x.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/prices/prices-mob2x.jpg);
+  }
+}
+
+@media (min-width: 480px) {
+  .prices {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../../images/prices/prices-tab.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/prices/prices-tab.jpg);
+  }
+}
+
+@media (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../../images/prices/prices-tab2x.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/prices/prices-tab2x.jpg);
+  }
+}
+
+@media (min-width: 768px) {
+  .prices {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../../images/prices/prices-desk.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/prices/prices-desk.jpg);
+  }
+}
+
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .prices {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../../images/prices/prices-desk2x.jpg);
+    background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/prices/prices-desk2x.jpg);
+  }
+}
+
 .subtitle {
   color: rgba(157, 164, 189, 0.6);
   margin-bottom: 20px;
@@ -304,15 +339,18 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  font-size: 14px;
+  line-height: 2.14;
 }
 
-@media screen and (max-width: 480px) {
+.prices-item:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
   .prices-item {
-    font-size: 14px;
-    line-height: 2.14;
-  }
-  .prices-item:last-child {
-    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 1.67;
   }
 }
 
