@@ -357,38 +357,70 @@
 				</ul>
 			</section>
 		</main>
-		<form class="appointment-form">
-			<h2 class="appointment-title">Онлайн-запись</h2>
-			<label class="appointment-field">
-				<input class="appointment-input" type="text" name="name" placeholder=" " autofocus />
-				<span class="appointment-label">Имя*</span>
-			</label>
-			<label class="appointment-field">
-				<input class="appointment-input" type="tel" name="tel" placeholder=" " />
-				<span class="appointment-label">Телефон*</span>
-			</label>
-			<label class="appointment-field" for="comment">
-				<textarea class="appointment-textarea" name="comment" id="comment" rows="1" placeholder=" "></textarea>
-				<span class="appointment-comment">Сообщение</span>
-			</label>
-			<div class="appointment-submit">
-				<button class="appointment-submit-button" type="submit">
-					Отправить
-				</button>
-			</div>
-		</form>
+		<div class="appoitment-container">
+			<form class="appointment-form">
+				<h2 class="appointment-title">Онлайн-запись</h2>
+				<label class="appointment-field">
+					<input class="appointment-input" type="text" name="name" placeholder=" " autofocus />
+					<span class="appointment-label">Имя*</span>
+				</label>
+				<label class="appointment-field">
+					<input class="appointment-input" type="tel" name="tel" placeholder=" " />
+					<span class="appointment-label">Телефон*</span>
+				</label>
+				<label class="appointment-field" for="comment">
+					<textarea class="appointment-textarea" name="comment" id="comment" rows="4" placeholder=" "></textarea>
+					<span class="appointment-comment">Сообщение</span>
+				</label>
+				<div class="appointment-submit">
+					<button class="appointment-submit-button dark-button" type="submit">
+						Отправить
+					</button>
+				</div>
+			</form>
+		</div>
 		<footer>
 			<div class="footer-contacts">
 				<h2 class="footer-contacts-title">Контакты</h2>
 				<address>
-					<a href="">ул. Васильковая, 7А Киев, 08132</a>
-					<a href="">+38 044 111 11 11</a>
-					<a href="">barbershop@email.com</a>
+					<ul class="footer-list">
+						<li>
+							<a class="footer-contact" href="#">
+								<svg class="footer-icon street">
+									<use href="./images/sprite.svg#icon-map-pin"></use>
+								</svg>
+								ул. Васильковая, 7А Киев, 08132
+							</a>
+						</li>
+						<li>
+							<a class="footer-contact" href="#">
+								<svg class="footer-icon tel">
+									<use href="./images/sprite.svg#icon-phone"></use>
+								</svg>
+								+38 044 111 11 11
+							</a>
+						</li>
+						<li>
+							<a class="footer-contact" href="">
+								<svg class="footer-icon mail">
+									<use href="./images/sprite.svg#icon-mail"></use>
+								</svg>
+								barbershop@email.com
+							</a>
+						</li>
+					</ul>
 				</address>
 				<div class="footer-timetable">
 					<h3 class="footer-timetable-title">время работы</h3>
 					<p class="footer-timetable-text">Ежедневно с 9:00 до 22:00</p>
 				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="footer-social-media decorative-line">
+					<li><a class="footer-social-media-item" href="#">Instagram</a></li>
+					<li><a class="footer-social-media-item" href="#">Youtube</a></li>
+				</ul>
+				<div class="footer-copyright"><p>&copy Copyright 2020</p></div>
 			</div>
 		</footer>
 	</body>

@@ -1,7 +1,10 @@
 @import "./utils/modern-normalize";
 @import "./utils/variables";
 @import "./utils/default-styles";
+@import "./utils/mixins";
 @import "./components/buttons";
 @import "./components/decorative-line";
 
 @import "./components/prices";
+@import "./components/form";
+@import "./components/footer";

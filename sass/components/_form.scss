@@ -1,0 +1,58 @@
+.appoitment-container {
+	@extend %content-container;
+	background-color: $dark-background-color;
+	text-align: center;
+}
+.appointment-title {
+	@extend %section-title;
+
+	font-family: $secondary-font;
+	font-weight: 700;
+	color: $primary-background-color;
+	white-space: nowrap;
+}
+.appointment-field {
+	margin-bottom: 44px;
+}
+.appointment-input,
+.appointment-textarea {
+	border: none;
+	border-bottom: 1px solid $header-prices-footer-gray-color;
+	background-color: $dark-background-color;
+	width: 100%;
+	max-width: 480px;
+
+	@include transition(border-bottom);
+
+	&:focus {
+		border-bottom: 1px solid $primary-background-color;
+	}
+}
+.appointment-field {
+	position: relative;
+	display: flex;
+}
+.appointment-label,
+.appointment-comment {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	@include transition(color);
+
+	.appointment-input:hover + & {
+		color: $primary-background-color;
+	}
+	.appointment-textarea:focus + & {
+		color: $primary-background-color;
+	}
+}
+.appointment-submit {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.appointment-submit-button {
+	@extend %button;
+	padding: 12px 38px;
+}

@@ -1,0 +1,93 @@
+.footer-contacts {
+	@extend %content-container;
+	text-align: center;
+
+	background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+		url("../../images/footer/img.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.footer-contacts-title {
+	@extend %section-title;
+
+	font-family: $secondary-font;
+	font-weight: 700;
+	color: $primary-background-color;
+	white-space: nowrap;
+}
+.footer-list {
+	@extend %reset-list;
+	margin-bottom: 44px;
+
+	& li:not(:last-child) {
+		margin-bottom: 20px;
+	}
+}
+.footer-contact {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-style: normal;
+
+	font-size: 18px;
+	line-height: 1.67;
+	color: $header-prices-footer-gray-color;
+}
+.footer-icon {
+	fill: $header-prices-footer-gray-color;
+	margin-right: 16px;
+	width: 24px;
+	height: 24px;
+}
+.footer-timetable {
+	text-align: start;
+}
+.footer-timetable-title {
+	margin-bottom: 20px;
+
+	@extend %section-subtitle;
+	color: $primary-background-color;
+}
+.footer-timetable-text {
+	font-size: 18px;
+	line-height: 1.67;
+	color: $header-prices-footer-gray-color;
+}
+.footer-bottom {
+	@extend %content-container;
+	padding: 44px 30px;
+	position: relative;
+}
+.footer-social-media {
+	position: absolute;
+	top: 44px;
+	right: 0;
+	@extend %reset-list;
+	display: flex;
+	margin-bottom: 20px;
+	justify-content: center;
+}
+.footer-social-media-item {
+	text-decoration: none;
+
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+
+	color: $title-text-color;
+
+	&:first-child {
+		margin-right: 40px;
+	}
+}
+.footer-copyright {
+	position: absolute;
+	top: 80px;
+
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+
+	color: $header-prices-footer-gray-color;
+}
