@@ -1,0 +1,78 @@
+.header {
+    background-image: url(../../images/header/Slider-mobile-3.jpg);
+    max-height: 580px;
+}
+.header .container {
+    @extend %content-container;
+    padding-top: 40px;
+}
+.header li {
+    @extend %reset-list;
+}
+.header a {
+    @extend %reset-link;
+}
+.header-wrapper {
+    display: none;
+    order: 1;
+    @media screen and (min-width:768px) {
+        display: block;
+    }
+}
+.header-logo {
+    fill: currentColor;
+    color: #FFFFFF;
+}
+.menu-open {
+    display: block;
+    width: 40px;
+    height: 40px;
+    padding: 12px 8px;
+    background: none;
+    border: 0;
+    fill: currentColor;
+    color: white;
+    cursor: pointer;
+}
+
+.header-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//text-content
+.header-content {
+    margin-top: 120px;
+    margin-left: 31px;
+    max-width: 306px;
+}
+.header-content-subtitle {
+    text-transform: uppercase;
+    color: $header-prices-subtitle-color;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.1em;
+}
+.header-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: 0.05em;
+    margin: 20px 0;
+    color: #FFFFFF;
+}
+.header-content-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.02em;
+    color: $header-prices-footer-gray-color;
+}
+
+.header-transition {
+    display: none;
+}

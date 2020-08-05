@@ -176,33 +176,38 @@ img {
   height: auto;
 }
 
-.prices-list {
+.header a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header li, .prices-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.prices {
+.header .container, .prices {
   margin-left: auto;
   margin-right: auto;
   padding: 84px 30px;
 }
 
 @media screen and (min-width: 480px) {
-  .prices {
+  .header .container, .prices {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .prices {
+  .header .container, .prices {
     width: 768px;
     padding: 100px 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .prices {
+  .header .container, .prices {
     width: 1280px;
     padding: 130px 55px;
   }
@@ -269,6 +274,95 @@ img {
   background-color: currentColor;
   top: 6px;
   left: 0;
+}
+
+.header {
+  background-image: url(../../images/header/Slider-mobile-3.jpg);
+  max-height: 580px;
+}
+
+.header .container {
+  padding-top: 40px;
+}
+
+.header-wrapper {
+  display: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .header-wrapper {
+    display: block;
+  }
+}
+
+.header-logo {
+  fill: currentColor;
+  color: #FFFFFF;
+}
+
+.menu-open {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 12px 8px;
+  background: none;
+  border: 0;
+  fill: currentColor;
+  color: white;
+  cursor: pointer;
+}
+
+.header-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-content {
+  margin-top: 120px;
+  margin-left: 31px;
+  max-width: 306px;
+}
+
+.header-content-subtitle {
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+}
+
+.header-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  margin: 20px 0;
+  color: #FFFFFF;
+}
+
+.header-content-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.header-transition {
+  display: none;
 }
 
 .prices {
