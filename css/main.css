@@ -300,14 +300,14 @@ img {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1280px) {
   .prices {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../../images/prices/prices-desk.jpg);
     background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/prices/prices-desk.jpg);
   }
 }
 
-@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+@media (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 2dppx) {
   .prices {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(17, 19, 25, 0.8)), to(rgba(17, 19, 25, 0.8))), url(../../images/prices/prices-desk2x.jpg);
     background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)), url(../../images/prices/prices-desk2x.jpg);
@@ -329,6 +329,36 @@ img {
   color: #9da4bd;
   padding: 30px;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 1280px) {
+  .prices-list {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0;
+  }
+}
+
+.prices-list-one {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .prices-list-one {
+    width: 585px;
+    padding: 30px 40px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .prices-list-two {
+    width: 585px;
+    padding: 30px 40px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  }
 }
 
 .prices-item {
