@@ -300,12 +300,18 @@ img {
   margin-bottom: 50px;
 }
 
+.prices-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 @media screen and (max-width: 480px) {
   .prices-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-bottom: 20px;
     font-size: 14px;
     line-height: 2.14;
   }
@@ -314,14 +320,17 @@ img {
   }
 }
 
-.button {
+.button-prices {
   margin-right: auto;
   margin-left: auto;
 }
 
-hr {
-  margin: 0;
-  width: 100%;
-  background-color: #9da4bd;
+.prices-line {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.12);
 }
 /*# sourceMappingURL=main.css.map */

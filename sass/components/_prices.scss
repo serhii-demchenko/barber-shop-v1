@@ -8,13 +8,13 @@
 }
 
 .subtitle {
-	@extend %subtitle;
-	color: $subtitle-color;
+	@extend %section-subtitle;
+	color: $header-prices-subtitle-color;
 	margin-bottom: 20px;
 }
 
 .decorative-line {
-	color: $subtitle-color;
+	color: $header-prices-subtitle-color;
 }
 
 .section-title {
@@ -25,15 +25,16 @@
 .prices-list {
 	@extend %reset-list;
 	background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-	color: $header-prices-gray-color;
+	color: $header-prices-footer-gray-color;
 	padding: 30px;
 	margin-bottom: 50px;
 }
 
 .prices-item {
+	display: flex;
+	margin-bottom: 20px;
+	align-items: baseline;
 	@media screen and (max-width: 480px) {
-		display: flex;
-		margin-bottom: 20px;
 		font-size: 14px;
 		line-height: 2.14;
 
@@ -42,13 +43,14 @@
 		}
 	}
 }
-.button {
+.button-prices {
 	margin-right: auto;
 	margin-left: auto;
 }
 
-hr {
-	margin: 0;
-	width: 100%;
-	background-color: $header-prices-gray-color;
+.prices-line {
+	flex-grow: 1;
+	margin-left: 6px;
+	margin-right: 6px;
+	border-bottom: 1px solid rgba(157, 164, 189, 0.12);
 }
