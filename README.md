@@ -16,6 +16,10 @@ https://swok-kh.github.io/barber-shop-v1/
 
 \$dark-background-color: #191c26; - темный цвет фона (используется в секции "Контакты")
 
+\$header-prices-footer-gray-color: #9da4bd; - цвет текста в хеадере футере и секции цены
+
+\$header-prices-subtitle-color: rgba(157, 164, 189, 0.6); - цвет подзаголовка в хеадере и секции цены
+
 \$primary-font: "Open Sans", sans-serif; - основной шрифт
 
 \$secondary-font: "Raleway", sans-serif; - шрифт заголовков
@@ -37,6 +41,10 @@ https://swok-kh.github.io/barber-shop-v1/
 %reset-list - убирает декорацию списка
 
 %content-container - обертка для секции (применено центрирование, прописвны все медиаусловия для всех разрешений)
+
+%section-title - заголовок секции
+
+%section-subtitle - подзаголовок секции
 
 # Кнопки
 
