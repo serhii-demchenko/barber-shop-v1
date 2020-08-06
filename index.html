@@ -103,20 +103,43 @@
 		</header>
 		<main>
 			<section class="about-us">
-				<div>
-					<img src="" alt="photo1" />
-					<img src="" alt="photo2" />
+				<div class="about-us-img">
+					<picture>
+						<source
+							srcset="./images/About-us/About-us-desktop/about-us-desktop1-270@1x.jpg"
+							media="(min-width: 1280px)"
+						/>
+						<source
+							srcset="./images/About-us/About-us-tablet/about-us1-tablet-330@2x.jpg 330w"
+							media="(min-width: 768px)"
+						/>
+						<img src="./images/About-us/About-us-tablet/about-us1-tablet-330@2x.jpg" alt="photo1" />
+					</picture>
+					<picture>
+						<source
+							srcset="./images/About-us/About-us-desktop/about-us-desktop2-270@1x.jpg"
+							media="(min-width: 1280px)"
+						/>
+						<source srcset="./images/About-us/About-us-tablet/about-us2-tablet-330@2x.jpg 330w" />
+						<img
+							src="./images/About-us/About-us-tablet/about-us2-tablet-330@2x.jpg"
+							sizes="(min-width: 768px) 330px"
+							alt="photo2"
+						/>
+					</picture>
 				</div>
 				<div>
-					<p class="subtitle-text">О нас</p>
+					<p class="subtitle decorative-line">О нас</p>
 					<h2 class="section-title">Лучший Барбершоп твоего города</h2>
-					<p>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</p>
-					<p>
+					<p class="text-description-first">
+						Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+					</p>
+					<p class="text-description-second">
 						Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки
 						нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
 						волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
 					</p>
-					<button>онлайн-запись</button>
+					<button class="light-button">онлайн-запись</button>
 				</div>
 			</section>
 			<!--services and prices-->
@@ -128,53 +151,56 @@
 				<h2 class="section-title">Услуги и цены</h2>
 
 				<ul class="prices-list">
-					<li class="prices-item">
-						<span>Мужская стрижка</span>
-						<div class="prices-line"></div>
-						<span>от 300 грн.</span>
-					</li>
+					<ul class="prices-list-one">
+						<li class="prices-item">
+							<span>Мужская стрижка</span>
+							<div class="prices-line"></div>
+							<span>от 300 грн.</span>
+						</li>
 
-					<li class="prices-item">
-						<span>Стрижка бороды</span>
-						<div class="prices-line"></div>
-						<span>от 200 грн.</span>
-					</li>
+						<li class="prices-item">
+							<span>Стрижка бороды</span>
+							<div class="prices-line"></div>
+							<span>от 200 грн.</span>
+						</li>
 
-					<li class="prices-item">
-						<span>Стрижка усов</span>
-						<div class="prices-line"></div>
-						<span>от 200 грн.</span>
-					</li>
+						<li class="prices-item">
+							<span>Стрижка усов</span>
+							<div class="prices-line"></div>
+							<span>от 200 грн.</span>
+						</li>
 
-					<li class="prices-item">
-						<span>Бритье опасной бритвой</span>
-						<div class="prices-line"></div>
-						<span>от 200 грн.</span>
-					</li>
+						<li class="prices-item">
+							<span>Бритье опасной бритвой</span>
+							<div class="prices-line"></div>
+							<span>от 200 грн.</span>
+						</li>
+					</ul>
+					<ul class="prices-list-two">
+						<li class="prices-item">
+							<span>Cтрижка у стажера</span>
+							<div class="prices-line"></div>
+							<span>от 50 грн.</span>
+						</li>
 
-					<li class="prices-item">
-						<span>Cтрижка у стажера</span>
-						<div class="prices-line"></div>
-						<span>от 50 грн.</span>
-					</li>
+						<li class="prices-item">
+							<span>Стрижка под насадку</span>
+							<div class="prices-line"></div>
+							<span>от 200 грн.</span>
+						</li>
 
-					<li class="prices-item">
-						<span>Стрижка под насадку</span>
-						<div class="prices-line"></div>
-						<span>от 200 грн.</span>
-					</li>
+						<li class="prices-item">
+							<span>Детская стрижка (до 12 лет)</span>
+							<div class="prices-line"></div>
+							<span>от 300 грн.</span>
+						</li>
 
-					<li class="prices-item">
-						<span>Детская стрижка (до 12 лет)</span>
-						<div class="prices-line"></div>
-						<span>от 300 грн.</span>
-					</li>
-
-					<li class="prices-item">
-						<span>Камуфлирование седины</span>
-						<div class="prices-line"></div>
-						<span>от 200 грн.</span>
-					</li>
+						<li class="prices-item">
+							<span>Камуфлирование седины</span>
+							<div class="prices-line"></div>
+							<span>от 200 грн.</span>
+						</li>
+					</ul>
 				</ul>
 
 				<button type="submit" class="dark-button button-prices">онлайн-запись</button>
@@ -182,47 +208,44 @@
 
 			<!--Why-us section-->
 			<section class="why-us">
-				<p class="why-us-subtitle decorative-line">старая традиционная школа</p>
-				<h1 class="why-us-title">Почему приходят именно к нам?</h1>
-				<p class="why-us-description">
-					О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
-				</p>
+				<div class="section-text">
+					<p class="subtitle decorative-line">старая традиционная школа</p>
+					<h2 class="title">Почему приходят именно к нам?</h2>
+					<p class="why-us-description">
+						О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
+					</p>
+				</div>
+
 				<ul class="why-us-data-list">
 					<li class="why-us-list-item">
+						<span class="why-us-digit">
+							600
+						</span>
 						<p class="why-us-text-unit">
-							<span class="why-us-digit">
-								600
-								<sup class="why-us-plus">+</sup>
-								<!-- Еще можно сделать этот + псевдоэлементом after, 
-								оставила пока в разметке, потом, может уберу при стилизации -->
-							</span>
 							Довольных клиентов в день
 						</p>
 					</li>
 					<li class="why-us-list-item">
+						<span class="why-us-digit">
+							50
+						</span>
 						<p class="why-us-text-unit">
-							<span class="why-us-digit">
-								50
-								<sup class="why-us-plus">+</sup>
-							</span>
 							Наград за отличный сервис
 						</p>
 					</li>
 					<li class="why-us-list-item">
+						<span class="why-us-digit">
+							20
+						</span>
 						<p class="why-us-text-unit">
-							<span class="why-us-digit">
-								20
-								<sup class="why-us-plus">+</sup>
-							</span>
 							Лучших мастеров Киева
 						</p>
 					</li>
 					<li class="why-us-list-item">
+						<span class="why-us-digit">
+							100
+						</span>
 						<p class="why-us-text-unit">
-							<span class="why-us-digit">
-								100
-								<sup class="why-us-plus">+</sup>
-							</span>
 							Подарков постоянным клиентам
 						</p>
 					</li>
