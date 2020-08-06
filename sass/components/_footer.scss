@@ -7,7 +7,21 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+
+	@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 2dppx),
+		screen and (min-resolution: 192dpi) {
+		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+			url("../../images/footer/img@2x.jpg");
+	}
+	@media screen and (min-device-pixel-ratio: 3),
+		screen and (min-resolution: 3dppx),
+		screen and (min-resolution: 288dpi) {
+		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+			url("../../images/footer/img@3x.jpg");
+	}
 }
+
 .footer-contacts-title {
 	@extend %section-title;
 
@@ -84,6 +98,7 @@
 .footer-copyright {
 	position: absolute;
 	top: 80px;
+	margin-bottom: 44px;
 
 	font-weight: 600;
 	font-size: 11px;
