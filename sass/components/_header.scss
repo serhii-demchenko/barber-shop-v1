@@ -12,48 +12,94 @@
 .header a {
     @extend %reset-link;
 }
-.header-wrapper {
-    display: none;
-    order: 1;
-    @media screen and (min-width:768px) {
-        display: block;
-    }
+.header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .header-logo {
     fill: currentColor;
     color: #FFFFFF;
 }
-.menu-open {
-    display: block;
-    width: 40px;
-    height: 40px;
-    padding: 12px 8px;
-    background: none;
-    border: 0;
+.menuBurger {
+    display: none;   /* иконка гамбургер скрыта */
     fill: currentColor;
-    color: white;
-    cursor: pointer;
-}
+    color: #FFFFFF;
+  }
+  @media screen and (max-width: 767px) {
+    .header-wrapper {
+      display: none; /* пункты меню скрыты */
+      z-index: 1;
+      background: #FFFFFF;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: 0;
+      padding: 118px 40px 227px;
+      width: 337px;
+      -webkit-transition: right 0.3s;
+        -moz-transition: right 0.3s;
+        transition: right 0.3s;
 
-.header-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    }
+  
+    .menu__item {
+      float: none; /* пункты меню в столбцах */
+    }
+  
+    .menuBurger {
+      display: inline-block; /* иконка гамбургер видна */
+    }
+  }
 
-//text-content
-.header-content {
-    margin-top: 120px;
-    margin-left: 31px;
-    max-width: 306px;
-}
-.header-content-subtitle {
-    text-transform: uppercase;
-    color: $header-prices-subtitle-color;
+
+  .header-transition {
+      display: none;
+  }
+
+  .header-link {
+      color: $main-text-color;
+      font-style: normal;
     font-weight: 600;
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
     letter-spacing: 0.1em;
+      transition-property: color;
+      transition-duration: $animation-duration;
+      transition-timing-function: $animation-timing-function;
+
+      &:hover,
+      &:active {
+          color: $accent-color;
+
+      }
+  }
+.menu__item ul {
+    padding: 0;
+}  
+.header-contact {
+    margin-top: 64px;
+}
+.header-contact-button {
+    margin-top: 24px;
+    margin-bottom: 64px;
+}
+.header-socials-link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2em;
+}
+.header-link-youtube {
+    padding-left: 80px;
+}
+
+//header-content
+.header-content {
+    width: 306px;
+    margin: 112px 31px 183px;
 }
 .header-title {
     font-style: normal;
@@ -63,16 +109,4 @@
     letter-spacing: 0.05em;
     margin: 20px 0;
     color: #FFFFFF;
-}
-.header-content-text {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.02em;
-    color: $header-prices-footer-gray-color;
-}
-
-.header-transition {
-    display: none;
 }
