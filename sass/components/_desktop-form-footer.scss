@@ -1,0 +1,7 @@
+.desktop-footer {
+	@media screen and (min-width: $desktop) {
+		display: flex;
+		align-items: center;
+		height: 644px;
+	}
+}

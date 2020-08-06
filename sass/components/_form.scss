@@ -2,6 +2,10 @@
 	@extend %content-container;
 	background-color: $dark-background-color;
 	text-align: center;
+
+	@media screen and (min-width: $desktop) {
+		width: 50%;
+	}
 }
 .appointment-title {
 	@extend %section-title;
@@ -27,10 +31,31 @@
 	&:focus {
 		border-bottom: 1px solid $primary-background-color;
 	}
+
+	@media screen and (min-width: $tablet) {
+		max-width: 768px;
+	}
 }
 .appointment-field {
 	position: relative;
 	display: flex;
+
+	&:nth-child(-n + 2) {
+		@media screen and (min-width: $tablet) {
+			width: calc((100% - 1 * 30px) / 2);
+		}
+	}
+
+	&:first-child {
+		@media screen and (min-width: $tablet) {
+			margin-right: 30px;
+		}
+	}
+}
+.appointment-field.comment {
+	@media screen and (min-width: $tablet) {
+		width: 100%;
+	}
 }
 .appointment-label,
 .appointment-comment {
@@ -51,8 +76,17 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@media screen and (min-width: $tablet) {
+		justify-content: flex-start;
+	}
 }
 .appointment-submit-button {
 	@extend %button;
 	padding: 12px 38px;
+}
+.apform-first-line {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+	}
 }
