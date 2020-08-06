@@ -278,8 +278,52 @@ img {
 }
 
 .header {
-  background-image: url(../../images/header/Slider-mobile-3.jpg);
-  max-height: 580px;
+  max-width: 480px;
+  height: 580px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/header/Slider-mobile-3.jpg);
+  background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/header/Slider-mobile-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/header/Slider-mobile-3@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/header/Slider-mobile-3@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    max-width: 768px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/header/Slider-tablet-3.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/header/Slider-tablet-3.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/header/Slider-tablet-3@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/header/Slider-tablet-3@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .header {
+    max-width: 1280px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/header/Slider-desktop-3.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/header/Slider-desktop-3.jpg);
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../images/header/Slider-desktop-3@2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/header/Slider-desktop-3@2x.jpg);
+  }
 }
 
 .header .container {
@@ -287,6 +331,7 @@ img {
 }
 
 .header-navigation {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,8 +362,8 @@ img {
     z-index: 1;
     background: #ffffff;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -50px;
+    right: -50px;
     margin: 0;
     padding: 118px 40px 227px;
     width: 337px;
@@ -382,23 +427,9 @@ img {
   padding-left: 80px;
 }
 
-.header-content {
-  width: 306px;
-  margin: 112px 31px 183px;
-}
-
-.header-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-  letter-spacing: 0.05em;
-  margin: 20px 0;
-  color: #ffffff;
-}
-
 .header__menu-button {
   position: absolute;
+  padding: 12px 8px;
   top: 0;
   right: 0;
   width: 40px;
@@ -422,6 +453,45 @@ img {
 
 .header__menu--is-open {
   display: block;
+}
+
+.menu-buton__open {
+  fill: currentColor;
+  color: #ffffff;
+}
+
+.header-content {
+  width: 306px;
+  margin: 112px 31px 183px;
+}
+
+.header-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  margin: 20px 0;
+  color: #ffffff;
+}
+
+.header-content-subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.header-content-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 
 .prices {
