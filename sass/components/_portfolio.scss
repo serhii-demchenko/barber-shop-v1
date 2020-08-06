@@ -1,23 +1,23 @@
 .portfolio-container {
-  @extend %content-container;
+	@extend %content-container;
 }
-.portfolio-title{
-  display: none;
+.portfolio-title {
+	display: none;
 }
 .portfolio-subtitle {
-  @extend %section-subtitle;
-  line-height: 1.9;
-  color: $title-text-color;
-  margin-bottom: 44px;
+	@extend %section-subtitle;
+	line-height: 1.9;
+	color: $title-text-color;
+	margin-bottom: 44px;
 }
 .portfolio {
-  @extend %reset-list;
+	@extend %reset-list;
 }
 .portfolio-card {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  &:last-child {
-    margin-bottom: 0;
-  }
+	display: flex;
+	justify-content: center;
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
