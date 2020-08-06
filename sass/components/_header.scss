@@ -7,6 +7,11 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow-x: hidden;
+	transition: 0.5s;
+	transition-duration: $animation-duration;
+	transition-timing-function: $animation-timing-function;
+	
 	@media screen and (min-device-pixel-ratio: 2),
 		screen and (min-resolution: 192dpi),
 		screen and (min-resolution: 2dppx) {
@@ -72,8 +77,6 @@
 		margin: 0;
 		padding: 118px 40px 227px;
 		width: 337px;
-		
-
 	}
 
 	.menu__item {
