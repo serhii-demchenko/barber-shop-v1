@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
 }
 
 hr {
@@ -215,12 +215,25 @@ img {
   margin-bottom: 44px;
 }
 
+
+.about-us .subtitle, .subtitle,
 .subtitle, .why-us .subtitle {
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.about-us .text-description-second {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #555555;
 }
 
 .dark-button, .light-button {
@@ -269,6 +282,110 @@ img {
   background-color: currentColor;
   top: 50%;
   left: 0;
+}
+
+.about-us {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 84px 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .about-us {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-us {
+    width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 100px 39px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us {
+    width: 1280px;
+    padding: 130px 55px;
+  }
+}
+
+.about-us .about-us-img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us .about-us-img {
+    display: block;
+    margin-right: 30px;
+  }
+  .about-us .about-us-img picture {
+    display: block;
+  }
+  .about-us .about-us-img picture + picture {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us .about-us-img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 64px;
+  }
+  .about-us .about-us-img picture {
+    min-width: 270px;
+  }
+  .about-us .about-us-img picture + picture {
+    margin-top: 0;
+    margin-left: 30px;
+  }
+}
+
+.about-us .subtitle {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.about-us .section-title {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1279px) {
+  .about-us .section-title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.about-us .text-description-first {
+  margin-bottom: 20px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us .text-description-first {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.about-us .light-button {
+  margin-top: 40px;
 }
 
 .prices {
