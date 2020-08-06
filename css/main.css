@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   -moz-tab-size: 4;
   -o-tab-size: 4;
@@ -176,46 +177,46 @@ img {
   height: auto;
 }
 
-.prices-list {
+.prices-list, .comand, .networks, .portfolio {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
-.prices {
+.prices, .comand-container, .portfolio-container {
   margin-left: auto;
   margin-right: auto;
   padding: 84px 30px;
 }
 
 @media screen and (min-width: 480px) {
-  .prices {
+  .prices, .comand-container, .portfolio-container {
     width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .prices {
+  .prices, .comand-container, .portfolio-container {
     width: 768px;
     padding: 100px 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .prices {
+  .prices, .comand-container, .portfolio-container {
     width: 1280px;
     padding: 130px 55px;
   }
 }
 
-.section-title {
+.section-title, .сomand-title {
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   margin-bottom: 44px;
 }
 
-.subtitle {
+.subtitle, .comand-subtitle, .portfolio-subtitle {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -328,5 +329,100 @@ img {
   margin-left: 6px;
   margin-right: 6px;
   border-bottom: 1px solid rgba(157, 164, 189, 0.12);
+}
+
+.comand-section {
+  background-color: #f7f7f7;
+}
+
+.comand-subtitle {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.сomand-title {
+  color: #303030;
+}
+
+.comand-card {
+  margin-bottom: 64px;
+  text-align: center;
+}
+
+.comand-card:last-child {
+  margin-bottom: 0;
+}
+
+.comand-name {
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  margin-top: 31px;
+  margin-bottom: 8px;
+  color: #303030;
+}
+
+.comand-prof {
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.network-icon {
+  margin-top: 30px;
+}
+
+.networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.networks-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.networks-link:hover svg,
+.networks-link:focus svg {
+  fill: #ff6c00;
+}
+
+.networks-icon {
+  fill: #303030;
+}
+
+.portfolio-title {
+  display: none;
+}
+
+.portfolio-subtitle {
+  line-height: 1.9;
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.portfolio-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-card:last-child {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */

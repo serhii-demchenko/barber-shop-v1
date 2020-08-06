@@ -1,0 +1,66 @@
+.comand-section {
+  background-color: $secondary-background-color;
+}
+.comand-container {
+  @extend %content-container;
+}
+.comand-subtitle{
+  @extend %section-subtitle;
+  color: $title-text-color;
+  margin-bottom: 20px;
+}
+.сomand-title {
+  @extend %section-title;
+  color: $title-text-color;
+}
+
+.comand {
+  @extend %reset-list;
+}
+.comand-card {
+  margin-bottom: 64px;
+  text-align: center;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.comand-name {
+  font-size: 18px;
+  line-height: 1.38;
+  letter-spacing: 0.02em;
+  margin-top: 31px;
+  margin-bottom: 8px;
+  color: $title-text-color;
+}
+.comand-prof {
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+.network-icon {
+  margin-top: 30px;
+}
+.networks{
+ @extend %reset-list;
+  display: flex;
+  justify-content: center;
+}
+.networks-link {
+  display: flex;
+  padding: 12px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: $primary-background-color;
+
+    &:hover svg,
+    &:focus svg {
+      fill: $accent-color;
+    }
+}
+.networks-icon {
+  fill: $title-text-color;
+
+}
+
