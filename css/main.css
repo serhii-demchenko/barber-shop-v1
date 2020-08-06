@@ -353,6 +353,11 @@ img {
   margin-bottom: 0;
 }
 
+.coman-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .comand-name {
   font-size: 18px;
   line-height: 1.38;
@@ -391,6 +396,10 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+}
+
+.networks-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .networks-link:hover svg,

@@ -24,6 +24,11 @@
     margin-bottom: 0;
   }
 }
+.coman-img {
+margin-left: auto;
+margin-right: auto;
+}
+
 .comand-name {
   font-size: 18px;
   line-height: 1.38;
@@ -53,6 +58,11 @@
   height: 44px;
   border-radius: 50%;
   background-color: $primary-background-color;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+
 
     &:hover svg,
     &:focus svg {
