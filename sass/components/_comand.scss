@@ -51,6 +51,11 @@ margin-right: auto;
   display: flex;
   justify-content: center;
 }
+.networks li{
+  &:not(:last-child) {
+  margin-right: 10px;
+  }
+ }
 .networks-link {
   display: flex;
   padding: 12px;
@@ -58,11 +63,6 @@ margin-right: auto;
   height: 44px;
   border-radius: 50%;
   background-color: $primary-background-color;
-
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
-
 
     &:hover svg,
     &:focus svg {

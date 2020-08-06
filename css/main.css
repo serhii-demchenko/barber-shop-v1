@@ -387,6 +387,10 @@ img {
           justify-content: center;
 }
 
+.networks li:not(:last-child) {
+  margin-right: 10px;
+}
+
 .networks-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,10 +400,6 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
-}
-
-.networks-link:not(:last-child) {
-  margin-right: 10px;
 }
 
 .networks-link:hover svg,
