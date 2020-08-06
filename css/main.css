@@ -300,14 +300,14 @@ img {
 
 .header-logo {
   fill: currentColor;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .menuBurger {
   display: none;
   /* иконка гамбургер скрыта */
   fill: currentColor;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -315,15 +315,13 @@ img {
     display: none;
     /* пункты меню скрыты */
     z-index: 1;
-    background: #FFFFFF;
+    background: #ffffff;
     position: absolute;
     top: 0;
-    bottom: 0;
+    right: 0;
     margin: 0;
     padding: 118px 40px 227px;
     width: 337px;
-    -webkit-transition: right 0.3s;
-    transition: right 0.3s;
   }
   .menu__item {
     float: none;
@@ -396,7 +394,34 @@ img {
   line-height: 56px;
   letter-spacing: 0.05em;
   margin: 20px 0;
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.header__menu-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+}
+
+.menu-buton__close {
+  opacity: 0;
+}
+
+.menu-button--is-open .menu-buton__close {
+  opacity: 1;
+}
+
+.menu-button--is-open .menu-buton__open {
+  opacity: 0;
+}
+
+.header__menu--is-open {
+  display: block;
 }
 
 .prices {

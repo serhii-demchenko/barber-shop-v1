@@ -8,8 +8,8 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/slick.css">
-		<link rel="stylesheet" href="./css/slick-theme.css">
+		<link rel="stylesheet" href="./css/slick.css" />
+		<link rel="stylesheet" href="./css/slick-theme.css" />
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
@@ -22,16 +22,27 @@
 						</svg>
 					</a>
 					<!--icon gamburger-->
+					<button
+						class="header__menu-button"
+						type="button"
+						data-menu-button
+						aria-label="Кнопка открытия меню мобильной версии"
+						aria-expanded="false"
+					>
+						<svg class="menu-button__icon">
+							<use class="menu-buton__open" href="./images/sprite.svg#icon-menu-open" width="24" height="16"></use>
+							<use class="menu-buton__close" href="./images/sprite.svg#icon-menu-close" width="24" height="16"></use>
+						</svg>
+					</button>
 					<div class="wrapper">
-						<div class="menuBurger">
+						<!-- <div class="menuBurger">
 							<svg>
 								<use href="./images/sprite.svg#icon-menu-open" width="24" height="16"></use>
-							</svg>
-							<svg>
 								<use href="./images/sprite.svg#icon-menu-close" width="24" height="16"></use>
 							</svg>
-						</div>
-						<ul class="header-wrapper">
+						</div> -->
+
+						<ul class="header-wrapper" data-menu>
 							<li class="menu__item">
 								<ul class="header-menu">
 									<li class="header-menu-item">
@@ -57,20 +68,20 @@
 								</ul>
 							</li>
 							<li class="menu__item">
-										<a href="tel:380441111111" class="header-contact header-link">
-											+38 044 111 11 11
-										</a>
-							</li>			
-							<li class="menu__item">			
-										<button class="header-contact-button light-button" type="button">
-											<span>онлайн-запись</span>
-										</button>
+								<a href="tel:380441111111" class="header-contact header-link">
+									+38 044 111 11 11
+								</a>
+							</li>
+							<li class="menu__item">
+								<button class="header-contact-button light-button" type="button">
+									<span>онлайн-запись</span>
+								</button>
 							</li>
 							<li class="menu__item">
 								<ul class="header-socials">
 									<li class="header-socials-item">
 										<a
-											class="header-socials-link header-link  decorative-line"
+											class="header-socials-link header-link decorative-line"
 											title="instagram"
 											href="https://www.instagram.com/"
 											target="_blank"
@@ -411,4 +422,5 @@
 	<script src="./js/jquery-3.5.1.min.js"></script>
 	<script src="./js/slick.min.js"></script>
 	<script src="./js/main.js"></script>
+	<script src="js/mobile-menu.js"></script>
 </html>
