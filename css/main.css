@@ -1076,6 +1076,7 @@ img {
 .appoitment-container {
   background-color: #191c26;
   text-align: center;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1099,10 +1100,12 @@ img {
 .appointment-input,
 .appointment-textarea {
   border: none;
-  border-bottom: 1px solid #9da4bd;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
   background-color: #191c26;
   width: 100%;
   max-width: 480px;
+  padding-bottom: 8px;
+  color: #ff6c00;
   -webkit-transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-bottom 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1117,6 +1120,21 @@ img {
   .appointment-textarea {
     max-width: 768px;
   }
+}
+
+@media screen and (min-width: 1280px) {
+  .appointment-input:hover,
+  .appointment-textarea:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+.appointment-input {
+  padding-bottom: 8px;
+}
+
+.appointment-textarea {
+  padding-bottom: 60px;
 }
 
 .appointment-field {
@@ -1149,8 +1167,33 @@ img {
   position: absolute;
   left: 0;
   top: 0;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  color: rgba(157, 164, 189, 0.4);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.appointment-input:focus + .appointment-label,
+.appointment-input:not(:placeholder-shown) + .appointment-label, .appointment-input:focus +
+.appointment-comment,
+.appointment-input:not(:placeholder-shown) +
+.appointment-comment {
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+.appointment-input:not(:placeholder-shown) + .appointment-label, .appointment-input:not(:placeholder-shown) +
+.appointment-comment {
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.appointment-label:hover, .appointment-label:focus,
+.appointment-comment:hover,
+.appointment-comment:focus {
+  color: #ffffff;
 }
 
 .appointment-input:hover + .appointment-label, .appointment-input:hover +
@@ -1158,9 +1201,25 @@ img {
   color: #ffffff;
 }
 
+.appointment-input:focus + .appointment-label, .appointment-input:focus +
+.appointment-comment {
+  color: #ffffff;
+}
+
+.appointment-textarea:hover + .appointment-label, .appointment-textarea:hover +
+.appointment-comment {
+  color: #ffffff;
+}
+
 .appointment-textarea:focus + .appointment-label, .appointment-textarea:focus +
 .appointment-comment {
   color: #ffffff;
+}
+
+.appointment-textarea:focus + .appointment-comment,
+.appointment-textarea:not(:placeholder-shown) + .appointment-comment {
+  -webkit-transform: translateY(140px);
+          transform: translateY(140px);
 }
 
 .appointment-submit {
@@ -1216,8 +1275,8 @@ img {
 
 .footer-contacts {
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.8)), to(rgba(25, 28, 38, 0.8))), url(../../images/footer/img.jpg);
-  background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)), url(../../images/footer/img.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(25, 28, 38, 0.8)), to(rgba(25, 28, 38, 0.8))), url(../../images/footer/img.jpg);
+  background: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)), url(../../images/footer/img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1365,6 +1424,10 @@ img {
 .footer-timetable-title {
   margin-bottom: 20px;
   color: #ffffff;
+}
+
+.footer-timetable-title.decorative-line:before {
+  color: rgba(157, 164, 189, 0.4);
 }
 
 .footer-timetable-text {
