@@ -9,8 +9,7 @@ footer {
 	@extend %content-container;
 	text-align: center;
 
-	background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-		url(../../images/footer/img.jpg);
+	background: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)), url(../../images/footer/img.jpg);
 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -131,6 +130,10 @@ footer {
 
 	@extend %section-subtitle;
 	color: $primary-background-color;
+
+	&.decorative-line:before {
+		color: $form-text-color;
+	}
 }
 .footer-timetable-text {
 	font-size: 18px;
