@@ -1,0 +1,190 @@
+footer {
+	@media screen and (min-width: $desktop) {
+		width: 50%;
+		height: 100%;
+	}
+}
+
+.footer-contacts {
+	@extend %content-container;
+	text-align: center;
+
+	background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+		url(../../images/footer/img.jpg);
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	@media screen and (min-device-pixel-ratio: 2),
+		screen and (min-resolution: 2dppx),
+		screen and (min-resolution: 192dpi) {
+		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+			url("../../images/footer/img@2x.jpg");
+	}
+	@media screen and (min-device-pixel-ratio: 3),
+		screen and (min-resolution: 3dppx),
+		screen and (min-resolution: 288dpi) {
+		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+			url("../../images/footer/img@3x.jpg");
+	}
+
+	@media screen and (min-width: $tablet) {
+		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+			url(../../images/footer/tablet-img.jpg);
+
+		@media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 2dppx),
+			screen and (min-resolution: 192dpi) {
+			background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+				url("../../images/footer/tablet-img@2x.jpg");
+		}
+		@media screen and (min-device-pixel-ratio: 3),
+			screen and (min-resolution: 3dppx),
+			screen and (min-resolution: 288dpi) {
+			background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+				url("../../images/footer/tablet-img@3x.jpg");
+		}
+	}
+	@media screen and (min-width: $desktop) {
+		padding-left: 100px;
+		width: 100%;
+		height: 100%;
+
+		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+			url(../../images/footer/desktop-img.jpg);
+
+		@media screen and (min-device-pixel-ratio: 2),
+			screen and (min-resolution: 2dppx),
+			screen and (min-resolution: 192dpi) {
+			background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+				url("../../images/footer/desktop-img@2x.jpg");
+		}
+		@media screen and (min-device-pixel-ratio: 3),
+			screen and (min-resolution: 3dppx),
+			screen and (min-resolution: 288dpi) {
+			background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
+				url("../../images/footer/desktop-img@3x.jpg");
+		}
+	}
+}
+.footer-contacts-title {
+	@extend %section-title;
+
+	font-family: $secondary-font;
+	font-weight: 700;
+	color: $primary-background-color;
+	white-space: nowrap;
+
+	@media screen and (min-width: $tablet) {
+		text-align: left;
+	}
+}
+.footer-contacts-tablet {
+	@media screen and (min-width: $tablet) and (max-width: 1279px) {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+}
+.footer-list {
+	@extend %reset-list;
+	margin-bottom: 44px;
+
+	& li:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	@media screen and (min-width: $tablet) {
+		/*width: calc(100% - 1 * 30px) / 2;*/
+		max-width: 330px;
+		text-align: start;
+	}
+	@media screen and (min-width: $tablet) {
+		margin-right: 30px;
+	}
+}
+.footer-contact {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	font-style: normal;
+
+	font-size: 18px;
+	line-height: 1.67;
+	color: $header-prices-footer-gray-color;
+}
+.footer-icon {
+	fill: $header-prices-footer-gray-color;
+	margin-right: 16px;
+	width: 24px;
+	height: 24px;
+}
+.footer-timetable {
+	text-align: start;
+
+	@media screen and (min-width: $tablet) {
+		width: calc(100% - 1 * 30px) / 2;
+	}
+}
+.footer-timetable-title {
+	margin-bottom: 20px;
+
+	@extend %section-subtitle;
+	color: $primary-background-color;
+}
+.footer-timetable-text {
+	font-size: 18px;
+	line-height: 1.67;
+	color: $header-prices-footer-gray-color;
+}
+.footer-bottom {
+	@extend %content-container;
+	padding: 44px 30px;
+	position: relative;
+
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		align-items: baseline;
+	}
+}
+.footer-social-media {
+	position: absolute;
+	top: 44px;
+	right: 0;
+	@extend %reset-list;
+	display: flex;
+
+	@media screen and (min-width: $tablet) {
+		top: 56px;
+	}
+}
+.footer-social-media-item {
+	margin-left: 40px;
+
+	&:last-child {
+		margin-right: 40px;
+	}
+}
+.footer-social-media-link {
+	display: flex;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	color: $title-text-color;
+}
+.footer-copyright {
+	position: absolute;
+	top: 80px;
+	margin-bottom: 44px;
+
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+
+	color: $header-prices-footer-gray-color;
+
+	@media screen and (min-width: $tablet) {
+		top: 56px;
+	}
+}
