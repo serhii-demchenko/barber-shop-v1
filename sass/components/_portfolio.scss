@@ -1,14 +1,11 @@
 .portfolio-container {
 	@extend %content-container;
+	.section-subtitle {
+		margin-bottom: 44px;
+	}
 }
 .portfolio-title {
 	display: none;
-}
-.portfolio-subtitle {
-	@extend %section-subtitle;
-	line-height: 1.9;
-	color: $title-text-color;
-	margin-bottom: 44px;
 }
 .portfolio {
 	@extend %reset-list;

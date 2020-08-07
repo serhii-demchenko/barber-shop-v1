@@ -1,18 +1,8 @@
 .why-us {
 	@extend %content-container;
 
-	.subtitle {
-		@extend %section-subtitle;
-	}
-
-	.title {
-		@extend %section-title;
-	}
-
-	.title,
-	.subtitle {
+	.section-title {
 		margin-bottom: 20px;
-		color: $title-text-color;
 	}
 
 	&-description {

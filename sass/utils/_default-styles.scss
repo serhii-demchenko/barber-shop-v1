@@ -65,27 +65,36 @@ img {
 		padding: 130px 55px;
 	}
 }
+.section-title {
+	margin-bottom: 44px;
 
-%section-title {
+	font-family: $secondary-font;
+	font-weight: 700;
 	font-size: 42px;
 	line-height: 1.17;
 	letter-spacing: 0.05em;
-	margin-bottom: 44px;
+	color: $title-text-color;
 }
+.section-subtitle {
+	margin-bottom: 20px;
 
-%section-subtitle {
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 }
-%main-text {
-	font-family: Open Sans;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 14px;
-	line-height: 26px;
-	letter-spacing: 0.02em;
-	color: $main-text-color;
-}
+// %section-title {
+// 	font-size: 42px;
+// 	line-height: 1.17;
+// 	letter-spacing: 0.05em;
+// 	margin-bottom: 44px;
+// }
+
+// %section-subtitle {
+// 	font-weight: 600;
+// 	font-size: 11px;
+// 	line-height: 1.36;
+// 	letter-spacing: 0.1em;
+// 	text-transform: uppercase;
+// }

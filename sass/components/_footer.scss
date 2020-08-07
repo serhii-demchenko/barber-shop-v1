@@ -10,7 +10,7 @@ footer {
 	text-align: center;
 
 	background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-		url(../../images/footer/img.jpg);
+		url(../images/footer/contacts-mobile.jpg);
 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -20,30 +20,30 @@ footer {
 		screen and (min-resolution: 2dppx),
 		screen and (min-resolution: 192dpi) {
 		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-			url("../../images/footer/img@2x.jpg");
+			url("../images/footer/contacts-mobile@2x.jpg");
 	}
 	@media screen and (min-device-pixel-ratio: 3),
 		screen and (min-resolution: 3dppx),
 		screen and (min-resolution: 288dpi) {
 		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-			url("../../images/footer/img@3x.jpg");
+			url("../images/footer/contacts-mobile@3x.jpg");
 	}
 
 	@media screen and (min-width: $tablet) {
 		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-			url(../../images/footer/tablet-img.jpg);
+			url(../images/footer/contacts-tablet.jpg);
 
 		@media screen and (min-device-pixel-ratio: 2),
 			screen and (min-resolution: 2dppx),
 			screen and (min-resolution: 192dpi) {
 			background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-				url("../../images/footer/tablet-img@2x.jpg");
+				url("../images/footer/contacts-tablet@2x.jpg");
 		}
 		@media screen and (min-device-pixel-ratio: 3),
 			screen and (min-resolution: 3dppx),
 			screen and (min-resolution: 288dpi) {
 			background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-				url("../../images/footer/tablet-img@3x.jpg");
+				url("../images/footer/contacts-tablet@3x.jpg");
 		}
 	}
 	@media screen and (min-width: $desktop) {
@@ -52,34 +52,31 @@ footer {
 		height: 100%;
 
 		background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-			url(../../images/footer/desktop-img.jpg);
+			url(../images/footer/contacts-desktop.jpg);
 
 		@media screen and (min-device-pixel-ratio: 2),
 			screen and (min-resolution: 2dppx),
 			screen and (min-resolution: 192dpi) {
 			background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-				url("../../images/footer/desktop-img@2x.jpg");
+				url("../images/footer/contacts-desktop@2x.jpg");
 		}
 		@media screen and (min-device-pixel-ratio: 3),
 			screen and (min-resolution: 3dppx),
 			screen and (min-resolution: 288dpi) {
 			background-image: linear-gradient(to right, rgba(25, 28, 38, 0.8), rgba(25, 28, 38, 0.8)),
-				url("../../images/footer/desktop-img@3x.jpg");
+				url("../images/footer/contacts-desktop@3x.jpg");
+		}
+	}
+	.section-title {
+		color: $primary-background-color;
+		white-space: nowrap;
+
+		@media screen and (min-width: $tablet) {
+			text-align: left;
 		}
 	}
 }
-.footer-contacts-title {
-	@extend %section-title;
 
-	font-family: $secondary-font;
-	font-weight: 700;
-	color: $primary-background-color;
-	white-space: nowrap;
-
-	@media screen and (min-width: $tablet) {
-		text-align: left;
-	}
-}
 .footer-contacts-tablet {
 	@media screen and (min-width: $tablet) and (max-width: 1279px) {
 		display: flex;
@@ -125,12 +122,9 @@ footer {
 	@media screen and (min-width: $tablet) {
 		width: calc(100% - 1 * 30px) / 2;
 	}
-}
-.footer-timetable-title {
-	margin-bottom: 20px;
-
-	@extend %section-subtitle;
-	color: $primary-background-color;
+	.section-subtitle {
+		color: $primary-background-color;
+	}
 }
 .footer-timetable-text {
 	font-size: 18px;

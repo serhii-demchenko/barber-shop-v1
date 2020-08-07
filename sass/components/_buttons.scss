@@ -16,9 +16,8 @@
 	border-radius: 25px;
 
 	cursor: pointer;
-
-	transition: color $animation-duration $animation-timing-function,
-		background-color $animation-duration $animation-timing-function;
+	@include transition(background-color);
+	@include transition(color);
 
 	&:hover,
 	&:focus {

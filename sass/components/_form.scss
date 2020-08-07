@@ -7,14 +7,10 @@
 		width: 50%;
 		height: 100%;
 	}
-}
-.appointment-title {
-	@extend %section-title;
-
-	font-family: $secondary-font;
-	font-weight: 700;
-	color: $primary-background-color;
-	white-space: nowrap;
+	.section-title {
+		color: $primary-background-color;
+		white-space: nowrap;
+	}
 }
 .appointment-field {
 	margin-bottom: 44px;
