@@ -3,6 +3,11 @@
 }
 .comand-container {
   @extend %content-container;
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding: 100px 60px;
+  }
+  
 }
 .comand-subtitle{
   @extend %section-subtitle;
@@ -11,17 +16,32 @@
 }
 .сomand-title {
   @extend %section-title;
+  font-family: $secondary-font;
   color: $title-text-color;
 }
 
 .comand {
   @extend %reset-list;
+
+  @media screen and (min-width: 769px) {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 .comand-card {
   margin-bottom: 64px;
   text-align: center;
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 769px) {
+    width: calc((100% - 30px*2)/3);
+    margin-right: 30px;
+    margin-bottom: 0;
+    &:last-child {
+			margin-right: 0;
+		}
   }
 }
 .coman-img {
@@ -67,6 +87,7 @@ margin-right: auto;
     &:hover svg,
     &:focus svg {
       fill: $accent-color;
+      transition: $animation-duration $animation-timing-function;
     }
 }
 .networks-icon {
