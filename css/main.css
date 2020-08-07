@@ -1020,7 +1020,6 @@ img {
 }
 
 .portfolio-subtitle {
-  line-height: 1.9;
   color: #303030;
   margin-bottom: 44px;
 }
@@ -1135,6 +1134,7 @@ img {
 
 .appointment-textarea {
   padding-bottom: 60px;
+  resize: none;
 }
 
 .appointment-field {
