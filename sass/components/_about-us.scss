@@ -1,40 +1,29 @@
 .about-us {
-	margin-left: auto;
-	margin-right: auto;
-	padding: 84px 30px;
-
-	@media screen and (min-width: $mobile) {
-		width: 480px;
-	}
+	@extend %content-container;
 
 	@media screen and (min-width: $tablet) {
-		width: 768px;
 		display: flex;
-		padding: 100px 39px;
 	}
 
-	@media screen and (min-width: $desktop) {
-		width: 1280px;
-		padding: 130px 55px;
-	}
 	.about-us-img {
 		display: none;
 		@media screen and (min-width: $tablet) {
-			display: block;
+			display: flex;
+			flex-direction: column;
 			margin-right: 30px;
 			picture {
-				display: block;
+				width: 330px;
 			}
 			picture + picture {
 				margin-top: 30px;
 			}
 		}
 		@media screen and (min-width: $desktop) {
-			display: flex;
+			flex-direction: row;
 			justify-content: space-between;
 			margin-right: 64px;
 			picture {
-				min-width: 270px;
+				width: 270px;
 			}
 			picture + picture {
 				margin-top: 0;
@@ -62,9 +51,6 @@
 	.text-description-first {
 		margin-bottom: 20px;
 
-		font-family: Open Sans;
-		font-style: normal;
-		font-weight: normal;
 		font-size: 16px;
 		line-height: 26px;
 		letter-spacing: 0.02em;
@@ -76,7 +62,9 @@
 		}
 	}
 	.text-description-second {
-		@extend %main-text;
+		font-size: 14px;
+		line-height: 26px;
+		letter-spacing: 0.02em;
 	}
 
 	.light-button {
