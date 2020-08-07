@@ -906,13 +906,33 @@ img {
   background-color: #f7f7f7;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .comand-container {
+    padding: 100px 159px;
+  }
+}
+
 .comand-subtitle {
   color: #303030;
   margin-bottom: 20px;
 }
 
 .сomand-title {
+  font-family: "Raleway", sans-serif;
   color: #303030;
+}
+
+@media screen and (min-width: 768px) {
+  .comand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .comand-card {
@@ -922,6 +942,17 @@ img {
 
 .comand-card:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 1280px) {
+  .comand-card {
+    width: calc((100% - 30px * 2) / 3);
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .comand-card:last-child {
+    margin-right: 0;
+  }
 }
 
 .coman-img {
@@ -971,15 +1002,17 @@ img {
   height: 44px;
   border-radius: 50%;
   background-color: #ffffff;
+  color: #303030;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.networks-link:hover svg,
-.networks-link:focus svg {
-  fill: #ff6c00;
+.networks-link:hover, .networks-link:focus {
+  color: #ff6c00;
 }
 
 .networks-icon {
-  fill: #303030;
+  fill: currentColor;
 }
 
 .portfolio-title {
@@ -990,6 +1023,16 @@ img {
   line-height: 1.9;
   color: #303030;
   margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .portfolio-card {
@@ -1004,6 +1047,30 @@ img {
 
 .portfolio-card:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .portfolio-card {
+    width: calc((100% - 30px) / 2);
+    margin-right: 30px;
+  }
+  .portfolio-card:nth-child(2n) {
+    margin-right: 0;
+  }
+  .portfolio-card:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .portfolio-card {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .portfolio-card:last-child {
+    margin-right: 0;
+  }
 }
 
 .appoitment-container {

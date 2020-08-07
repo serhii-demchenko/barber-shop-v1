@@ -1,76 +1,96 @@
 .comand-section {
-  background-color: $secondary-background-color;
+	background-color: $secondary-background-color;
 }
 .comand-container {
-  @extend %content-container;
+	@extend %content-container;
+
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+		padding: 100px 159px;
+	}
 }
-.comand-subtitle{
-  @extend %section-subtitle;
-  color: $title-text-color;
-  margin-bottom: 20px;
+.comand-subtitle {
+	@extend %section-subtitle;
+	color: $title-text-color;
+	margin-bottom: 20px;
 }
 .сomand-title {
-  @extend %section-title;
-  color: $title-text-color;
+	@extend %section-title;
+	font-family: $secondary-font;
+	color: $title-text-color;
 }
 
 .comand {
-  @extend %reset-list;
+	@extend %reset-list;
+
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }
 .comand-card {
-  margin-bottom: 64px;
-  text-align: center;
-  &:last-child {
-    margin-bottom: 0;
-  }
+	margin-bottom: 64px;
+	text-align: center;
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media screen and (min-width: $desktop) {
+		width: calc((100% - 30px * 2) / 3);
+		margin-right: 30px;
+		margin-bottom: 0;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 }
 .coman-img {
-margin-left: auto;
-margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .comand-name {
-  font-size: 18px;
-  line-height: 1.38;
-  letter-spacing: 0.02em;
-  margin-top: 31px;
-  margin-bottom: 8px;
-  color: $title-text-color;
+	font-size: 18px;
+	line-height: 1.38;
+	letter-spacing: 0.02em;
+	margin-top: 31px;
+	margin-bottom: 8px;
+	color: $title-text-color;
 }
 .comand-prof {
-  font-size: 14px;
-  line-height: 1.35;
-  letter-spacing: 0.02em;
-  color: $accent-color;
+	font-size: 14px;
+	line-height: 1.35;
+	letter-spacing: 0.02em;
+	color: $accent-color;
 }
 .network-icon {
-  margin-top: 30px;
+	margin-top: 30px;
 }
-.networks{
- @extend %reset-list;
-  display: flex;
-  justify-content: center;
+.networks {
+	@extend %reset-list;
+	display: flex;
+	justify-content: center;
 }
-.networks li{
-  &:not(:last-child) {
-  margin-right: 10px;
-  }
- }
+.networks li {
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+}
 .networks-link {
-  display: flex;
-  padding: 12px;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: $primary-background-color;
+	display: flex;
+	padding: 12px;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: $primary-background-color;
+	color: $title-text-color;
 
-    &:hover svg,
-    &:focus svg {
-      fill: $accent-color;
-    }
+	transition: color $animation-duration $animation-timing-function;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
 .networks-icon {
-  fill: $title-text-color;
-
+	fill: currentColor;
 }
-
