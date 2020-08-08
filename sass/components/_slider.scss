@@ -178,3 +178,50 @@
 		}
 	}
 }
+.slick-dots {
+	bottom: 0;
+}
+
+%slick-arrows-common-styles {
+	z-index: 10;
+	width: 60px;
+	height: 24px;
+	border-bottom: 1px solid $header-prices-subtitle-color;
+	&:before {
+		font-family: $primary-font;
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 15px;
+		letter-spacing: 0.1em;
+
+		color: $header-prices-subtitle-color;
+	}
+}
+.slick-prev {
+	@extend %slick-arrows-common-styles;
+	text-align: left;
+	@media screen and (min-width: $tablet) {
+		left: 424px;
+		top: 616px;
+	}
+	@media screen and (min-width: $desktop) {
+		left: 924px;
+	}
+	&:before {
+		content: "Назад";
+	}
+}
+.slick-next {
+	@extend %slick-arrows-common-styles;
+	text-align: right;
+	@media screen and (min-width: $tablet) {
+		left: 510px;
+		top: 616px;
+	}
+	@media screen and (min-width: $desktop) {
+		left: 1010px;
+	}
+	&:before {
+		content: "Вперед";
+	}
+}
