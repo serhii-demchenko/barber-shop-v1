@@ -23,116 +23,142 @@
 				</div>
 			</div>
 			<div class="container">
-				<nav class="header-navigation">
-					<a href="index.html" class="header-logo logo">
-						<svg class="header-logo-icon" width="69" height="55">
+				<aside class="header-sidebar">
+					<a href="index.html" class="sidebar-logo logo">
+						<svg class="sidebar-logo-icon" width="69" height="55">
 							<use href="./images/sprite.svg#icon-logo"></use>
 						</svg>
 					</a>
-					<!--icon gamburger-->
-					<button
-						class="header__menu-button"
-						type="button"
-						data-menu-button
-						aria-label="Кнопка открытия меню мобильной версии"
-						aria-expanded="false"
-					>
-						<svg class="menu-button__icon">
-							<use class="menu-buton__open" href="./images/sprite.svg#icon-menu-open" width="24" height="16"></use>
-							<use class="menu-buton__close" href="./images/sprite.svg#icon-menu-close" width="24" height="16"></use>
-						</svg>
-					</button>
-					<div class="wrapper">
-						<!-- <div class="menuBurger">
-							<svg>
-								<use href="./images/sprite.svg#icon-menu-open" width="24" height="16"></use>
-								<use href="./images/sprite.svg#icon-menu-close" width="24" height="16"></use>
+					<ul class="sidebar-socials">
+						<li class="sidebar-socials-item">
+							<a
+								class="sidebar-socials-link header-link decorative-line"
+								title="instagram"
+								href="https://www.instagram.com/"
+								target="_blank"
+								rel="nofollow external"
+							>
+								Instagram
+							</a>
+						</li>
+						<li class="sidebar-socials-item">
+							<a
+								class="sidebar-socials-link header-link header-link-youtube"
+								title="youtube"
+								href="https://www.youtube.com/"
+								target="_blank"
+								rel="nofollow external"
+							>
+								Youtube
+							</a>
+						</li>
+					</ul>
+				</aside>
+				<div class="header-main">
+					<nav class="header-navigation">
+						<a href="index.html" class="header-logo logo">
+							<svg class="header-logo-icon" width="69" height="55">
+								<use href="./images/sprite.svg#icon-logo"></use>
 							</svg>
-						</div> -->
-
-						<ul class="header-wrapper" data-menu>
-							<li class="menu__item">
-								<ul class="header-menu">
-									<li class="header-menu-item">
-										<a class="header-menu-link header-link" href="#">
-											О нас
-										</a>
-									</li>
-									<li class="header-menu-item">
-										<a class="header-menu-link header-link" href="#">
-											Услуги и цены
-										</a>
-									</li>
-									<li class="header-menu-item">
-										<a class="header-menu-link header-link" href="#">
-											Мастера
-										</a>
-									</li>
-									<li class="header-menu-item">
-										<a class="header-menu-link header-link" href="#">
-											Контакты
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li class="menu__item">
-								<a href="tel:380441111111" class="header-contact header-link">
-									+38 044 111 11 11
-								</a>
-							</li>
-							<li class="menu__item">
-								<button class="header-contact-button light-button" type="button">
-									<span>онлайн-запись</span>
-								</button>
-							</li>
-							<li class="menu__item">
-								<ul class="header-socials">
-									<li class="header-socials-item">
-										<a
-											class="header-socials-link header-link decorative-line"
-											title="instagram"
-											href="https://www.instagram.com/"
-											target="_blank"
-											rel="nofollow external"
-										>
-											Instagram
-										</a>
-									</li>
-									<li class="header-socials-item">
-										<a
-											class="header-socials-link header-link header-link-youtube"
-											title="youtube"
-											href="https://www.youtube.com/"
-											target="_blank"
-											rel="nofollow external"
-										>
-											Youtube
-										</a>
-									</li>
-								</ul>
-							</li>
-						</ul>
+						</a>
+						<!--icon gamburger-->
+						<button
+							class="header__menu-button"
+							type="button"
+							data-menu-button
+							aria-label="Кнопка открытия меню мобильной версии"
+							aria-expanded="false"
+						>
+							<svg class="menu-button__icon">
+								<use class="menu-buton__open" href="./images/sprite.svg#icon-menu-open" width="24" height="16"></use>
+								<use class="menu-buton__close" href="./images/sprite.svg#icon-menu-close" width="24" height="16"></use>
+							</svg>
+						</button>
+						<div class="wrapper">
+							<ul class="header-wrapper" data-menu>
+								<li class="menu__item">
+									<ul class="header-menu">
+										<li class="header-menu-item">
+											<a class="header-menu-link header-link" href="#">
+												О нас
+											</a>
+										</li>
+										<li class="header-menu-item">
+											<a class="header-menu-link header-link" href="#">
+												Услуги и цены
+											</a>
+										</li>
+										<li class="header-menu-item">
+											<a class="header-menu-link header-link" href="#">
+												Мастера
+											</a>
+										</li>
+										<li class="header-menu-item">
+											<a class="header-menu-link header-link" href="#">
+												Контакты
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu__item menu-order">
+									<a href="tel:380441111111" class="header-contact header-link">
+										+38 044 111 11 11
+									</a>
+								</li>
+								<li class="menu__item">
+									<button class="header-contact-button light-button" type="button">
+										<span>онлайн-запись</span>
+									</button>
+								</li>
+								<li class="menu__item">
+									<ul class="header-socials">
+										<li class="header-socials-item">
+											<a
+												class="header-socials-link header-link decorative-line"
+												title="instagram"
+												href="https://www.instagram.com/"
+												target="_blank"
+												rel="nofollow external"
+											>
+												Instagram
+											</a>
+										</li>
+										<li class="header-socials-item">
+											<a
+												class="header-socials-link header-link header-link-youtube"
+												title="youtube"
+												href="https://www.youtube.com/"
+												target="_blank"
+												rel="nofollow external"
+											>
+												Youtube
+											</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</nav>
+					<div class="header-content">
+						<p class="header-content-subtitle decorative-line">
+							A hair salon for men in Kyiv
+						</p>
+						<h1 class="header-title">
+							BarberShop
+						</h1>
+						<p class="header-content-text">
+							Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+						</p>
 					</div>
-				</nav>
-				<div class="header-content">
-					<p class="header-content-subtitle decorative-line">
-						A hair salon for men in Kyiv
-					</p>
-					<h1 class="header-title">
-						BarberShop
-					</h1>
-					<p class="header-content-text">
-						Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
-					</p>
-				</div>
-				<!--slider-navigation menu-->
-				<div class="header-transition">
-					<a href="#" class="transition-link">
-						Назад
-					</a>
-					<a href="#" class="transition-link">
-						Вперед
-					</a>
+					<!--slider-navigation menu-->
+					<div class="header-transition">
+						<a href="#" class="transition-link">
+							Назад
+						</a>
+						<a href="#" class="transition-link">
+							Вперед
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
