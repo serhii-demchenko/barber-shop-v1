@@ -1,0 +1,41 @@
+.menuBurger {
+	display: inline-block; /* иконка гамбургер видна */
+	fill: currentColor;
+	color: #ffffff;
+}
+
+.header__menu-button {
+	position: absolute;
+	padding: 12px 8px;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	z-index: 100;
+	@media screen and (min-width: $tablet) {
+		display: none;
+	}
+}
+.menu-button__close {
+	opacity: 0;
+}
+.menu-button__open {
+	fill: $primary-background-color;
+}
+.menu-button--is-open {
+	.menu-button__close {
+		opacity: 1;
+	}
+	.menu-button__open {
+		opacity: 0;
+	}
+}
+.header__menu--is-open {
+	display: block;
+}
+.menu-buton__open {
+	fill: currentColor;
+	color: $primary-background-color;
+}

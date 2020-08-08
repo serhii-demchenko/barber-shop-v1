@@ -128,9 +128,9 @@ footer {
 	@extend %section-subtitle;
 	color: $primary-background-color;
 
-	&.decorative-line:before {
-		color: $form-text-color;
-	}
+	// &.decorative-line:before {
+	// 	color: $form-text-color;
+	// }
 }
 .footer-timetable-text {
 	font-size: 18px;
@@ -171,6 +171,10 @@ footer {
 	font-size: 11px;
 	line-height: 1.36;
 	color: $title-text-color;
+	&:hover,
+	&:active {
+		color: $accent-color;
+	}
 }
 .footer-copyright {
 	position: absolute;

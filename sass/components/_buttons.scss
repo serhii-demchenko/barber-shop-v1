@@ -29,8 +29,12 @@
 .dark-button {
 	@extend %button;
 	color: #ffffff;
+	text-decoration: none;
+	width: 170px;
 }
 .light-button {
 	@extend %button;
 	color: $title-text-color;
+	text-decoration: none;
+	width: 170px;
 }
