@@ -17,7 +17,7 @@
 		screen and (min-resolution: 2dppx) {
 		background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../images/header/Slider-mobile-3@2x.jpg);
 	}
-	@media screen and(min-width:$tablet) {
+	@media screen and (min-width:$tablet) {
 		max-width: $tablet;
 		background-image:  linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
 			url(../../images/header/Slider-tablet-3.jpg);
@@ -28,7 +28,7 @@
 				url(../../images/header/Slider-tablet-3@2x.jpg);
 		}
 	}
-	@media screen and(min-width:$desktop) {
+	@media screen and (min-width:$desktop) {
 		max-width: $desktop;
 		background-image:  linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
 			url(../../images/header/Slider-desktop-3.jpg);
@@ -39,6 +39,10 @@
 				url(../../images/header/Slider-desktop-3@2x.jpg);
 		}
 	}
+	@media screen and (min-width:$tablet) {
+		margin-left: 159px;	
+		height: 680px;
+	}
 }
 
 .header .container {
@@ -48,7 +52,7 @@
 .header li {
 	@extend %reset-list;
 }
-.header a {
+.header-link {
 	@extend %reset-link;
 }
 .header-navigation {
@@ -60,6 +64,9 @@
 .header-logo {
 	fill: currentColor;
 	color: #ffffff;
+	@media screen and (min-width:$tablet) {
+		display: none;
+	}
 }
 .menuBurger {
 	display: none; /* иконка гамбургер скрыта */
@@ -78,7 +85,12 @@
 		padding: 118px 40px 227px;
 		width: 337px;
 	}
-
+.header-wrapper {
+	@media screen and  (min-width:$tablet) {
+		display: flex;
+		padding: 0;
+	}
+}
 	.menu__item {
 		float: none; /* пункты меню в столбцах */
 	}
@@ -114,10 +126,28 @@
 }
 .header-contact {
 	margin-top: 64px;
+	text-transform: uppercase;
+	@media screen and  (min-width:$tablet) {
+		font-size: 12px;
+		line-height: 16px;
+		margin-top: 0;
+		color: $primary-background-color;
+		margin-top: 20px;
+		margin-right: 19px;
+	}
 }
 .header-contact-button {
 	margin-top: 24px;
 	margin-bottom: 64px;
+	@media screen and  (min-width:$tablet) {
+		margin: 0;
+		color: $primary-background-color;
+	}
+}
+.header-socials {
+	@media screen and  (min-width:$tablet) {
+		display: none;
+	}
 }
 .header-socials-link {
 	font-style: normal;
@@ -142,6 +172,9 @@
 	background-color: transparent;
 	border: none;
 	z-index: 100;
+	@media screen and  (min-width:$tablet) {
+		display: none;
+	}
 }
 .menu-buton__close {
 	opacity: 0;
@@ -166,6 +199,10 @@
 .header-content {
 	width: 306px;
 	margin: 112px 31px 183px;
+	@media screen and (min-width:$tablet) {
+		width: 355px;
+		margin: 150px 134px 240px 120px;
+	}
 }
 .header-title {
 	font-style: normal;
@@ -192,4 +229,80 @@
 	line-height: 26px;
 	letter-spacing: 0.02em;
 	color: $header-prices-footer-gray-color;
+}
+
+//header-sidebar
+.header-sidebar {
+	display: none;
+	@media screen and (min-width:$tablet) {
+		position: absolute;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-around;
+		background-color: #ffffff;
+		width: 159px;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+.sidebar-logo { 
+	margin-top: 32px;
+	margin-bottom: 282px;
+}
+.header .container {
+	@media screen and (min-width:$tablet) {
+		display: flex;
+		padding: 0;
+	}
+}
+.sidebar-socials {
+	display: flex;
+	transform: rotate(-90deg);
+}
+.header-menu {
+	@media screen and (min-width:$tablet) {
+		display: flex;
+	}
+	&-link {
+		@media screen and (min-width:$tablet) {
+		display: flex;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: 0.1em;
+		margin-right: 24px;
+		color: #FFFFFF;
+
+		}
+	}
+}
+.header-wrapper {
+	@media screen and  (min-width:$tablet)  {
+	display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+	justify-content: flex-end;
+	margin: 0;
+	}
+}
+.header-main  {
+	@media screen and  (min-width:$tablet)  {
+		width: 609px;
+	}
+}
+ 
+.menu-order {
+	@media screen and  (min-width:$tablet) {
+		order: 1;
+		margin-top: 20px;
+	}
+}
+.wrapper {
+	@media screen and  (min-width:$tablet) {
+		padding: 40px 29px 0 24px;
+	}
+	
 }
