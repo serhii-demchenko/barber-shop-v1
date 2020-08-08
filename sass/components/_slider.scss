@@ -179,27 +179,50 @@
 	}
 }
 .slick-dots {
-	bottom: 0;
-}
+	@media screen and (min-width: $tablet) {
+		width: 45px;
+		height: 18px;
+		z-index: 10;
 
+		bottom: 325px;
+		right: 39px;
+		transform: rotate(90deg);
+		li {
+			width: 10px;
+			button {
+				&::before {
+					content: "";
+					width: 2px;
+					height: 10px;
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}
 %slick-arrows-common-styles {
 	z-index: 10;
 	width: 60px;
 	height: 24px;
-	border-bottom: 1px solid $header-prices-subtitle-color;
+	color: $header-prices-subtitle-color;
+	border-bottom: 1px solid currentColor;
 	&:before {
 		font-family: $primary-font;
 		font-weight: 600;
 		font-size: 11px;
 		line-height: 15px;
 		letter-spacing: 0.1em;
-
-		color: $header-prices-subtitle-color;
+		color: currentColor;
+	}
+	&:hover,
+	&:focus {
+		color: $primary-background-color;
 	}
 }
 .slick-prev {
 	@extend %slick-arrows-common-styles;
 	text-align: left;
+	left: -100px;
 	@media screen and (min-width: $tablet) {
 		left: 424px;
 		top: 616px;
@@ -214,6 +237,7 @@
 .slick-next {
 	@extend %slick-arrows-common-styles;
 	text-align: right;
+	left: 868px;
 	@media screen and (min-width: $tablet) {
 		left: 510px;
 		top: 616px;
