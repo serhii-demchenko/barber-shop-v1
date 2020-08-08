@@ -1,25 +1,25 @@
-.comand-section {
+.command-section {
 	background-color: $secondary-background-color;
 }
-.comand-container {
+.command-container {
 	@extend %content-container;
 
 	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
 		padding: 100px 159px;
 	}
 }
-.comand-subtitle {
+.command-subtitle {
 	@extend %section-subtitle;
 	color: $title-text-color;
 	margin-bottom: 20px;
 }
-.сomand-title {
+.command-title {
 	@extend %section-title;
 	font-family: $secondary-font;
 	color: $title-text-color;
 }
 
-.comand {
+.command {
 	@extend %reset-list;
 
 	@media screen and (min-width: $tablet) {
@@ -28,7 +28,7 @@
 		justify-content: center;
 	}
 }
-.comand-card {
+.command-card {
 	margin-bottom: 64px;
 	text-align: center;
 	&:last-child {
@@ -44,12 +44,12 @@
 		}
 	}
 }
-.coman-img {
+.command-img {
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.comand-name {
+.command-name {
 	font-size: 18px;
 	line-height: 1.38;
 	letter-spacing: 0.02em;
@@ -57,7 +57,7 @@
 	margin-bottom: 8px;
 	color: $title-text-color;
 }
-.comand-prof {
+.command-prof {
 	font-size: 14px;
 	line-height: 1.35;
 	letter-spacing: 0.02em;

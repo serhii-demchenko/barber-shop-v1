@@ -3,6 +3,8 @@
 	background-color: $dark-background-color;
 	text-align: center;
 
+	cursor: pointer;
+
 	@media screen and (min-width: $desktop) {
 		width: 50%;
 		height: 100%;
@@ -22,10 +24,14 @@
 .appointment-input,
 .appointment-textarea {
 	border: none;
-	border-bottom: 1px solid $header-prices-footer-gray-color;
+	border-bottom: 1px solid $form-text-color;
 	background-color: $dark-background-color;
 	width: 100%;
 	max-width: 480px;
+
+	padding-bottom: 8px;
+
+	color: $accent-color;
 
 	@include transition(border-bottom);
 
@@ -36,6 +42,19 @@
 	@media screen and (min-width: $tablet) {
 		max-width: 768px;
 	}
+
+	@media screen and (min-width: $desktop) {
+		&:hover {
+			border-bottom: 1px solid $primary-background-color;
+		}
+	}
+}
+.appointment-input {
+	padding-bottom: 8px;
+}
+.appointment-textarea {
+	padding-bottom: 60px;
+	resize: none;
 }
 .appointment-field {
 	position: relative;
@@ -64,13 +83,43 @@
 	left: 0;
 	top: 0;
 
-	@include transition(color);
+	transform: translateY(0%);
+
+	color: $form-text-color;
+
+	@include transition(transform);
+
+	.appointment-input:focus + &,
+	.appointment-input:not(:placeholder-shown) + & {
+		transform: translateY(30px);
+	}
+
+	.appointment-input:not(:placeholder-shown) + & {
+		color: $form-text-color;
+	}
+
+	&:hover,
+	&:focus {
+		color: $primary-background-color;
+	}
 
 	.appointment-input:hover + & {
 		color: $primary-background-color;
 	}
+	.appointment-input:focus + & {
+		color: $primary-background-color;
+	}
+	.appointment-textarea:hover + & {
+		color: $primary-background-color;
+	}
 	.appointment-textarea:focus + & {
 		color: $primary-background-color;
+	}
+}
+.appointment-comment {
+	.appointment-textarea:focus + &,
+	.appointment-textarea:not(:placeholder-shown) + & {
+		transform: translateY(140px);
 	}
 }
 .appointment-submit {
