@@ -45,9 +45,7 @@
 	line-height: 25px;
 	text-align: center;
 	letter-spacing: 0.1em;
-	transition-property: color;
-	transition-duration: $animation-duration;
-	transition-timing-function: $animation-timing-function;
+	@include transition(color);
 
 	&:hover,
 	&:active {
