@@ -157,9 +157,6 @@ footer {
 	@media screen and (min-width: $tablet) {
 		top: 56px;
 	}
-	&.decorative-line {
-		padding-left: 100px;
-	}
 }
 .footer-social-media-item {
 	margin-right: 40px;
@@ -172,8 +169,12 @@ footer {
 	line-height: 1.36;
 	color: $title-text-color;
 	&:hover,
+	&:focus,
 	&:active {
 		color: $accent-color;
+	}
+	&.decorative-line {
+		padding-left: 100px;
 	}
 }
 .footer-copyright {

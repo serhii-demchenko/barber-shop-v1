@@ -1015,6 +1015,12 @@ img {
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .about-us-title {
+    padding-right: 88px;
+  }
+}
+
 @media screen and (max-width: 1279px) {
   .about-us-title {
     font-size: 28px;
@@ -1894,10 +1900,6 @@ img {
   }
 }
 
-.footer-social-media.decorative-line {
-  padding-left: 100px;
-}
-
 .footer-social-media-item {
   margin-right: 40px;
 }
@@ -1913,8 +1915,12 @@ img {
   color: #303030;
 }
 
-.footer-social-media-link:hover, .footer-social-media-link:active {
+.footer-social-media-link:hover, .footer-social-media-link:focus, .footer-social-media-link:active {
   color: #ff6c00;
+}
+
+.footer-social-media-link.decorative-line {
+  padding-left: 100px;
 }
 
 .footer-copyright {

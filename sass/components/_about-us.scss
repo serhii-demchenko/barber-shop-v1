@@ -36,6 +36,9 @@
 .about-us-title {
 	@extend %section-title;
 	margin-bottom: 20px;
+	@media screen and (min-width: $mobile) and (max-width: $tablet - 1px) {
+		padding-right: 88px;
+	}
 	@media screen and (max-width: $desktop - 1px) {
 		font-size: 28px;
 		line-height: 1.18;
