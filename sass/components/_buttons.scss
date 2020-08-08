@@ -1,5 +1,5 @@
 %button {
-	display: block;
+	@extend %reset-link;
 	margin: 0;
 	padding: 12px 20px;
 	min-width: 160px;
@@ -16,9 +16,8 @@
 	border-radius: 25px;
 
 	cursor: pointer;
-
-	transition: color $animation-duration $animation-timing-function,
-		background-color $animation-duration $animation-timing-function;
+	@include transition(color);
+	@include transition(background-color);
 
 	&:hover,
 	&:focus {
@@ -29,12 +28,8 @@
 .dark-button {
 	@extend %button;
 	color: #ffffff;
-	text-decoration: none;
-	width: 170px;
 }
 .light-button {
 	@extend %button;
 	color: $title-text-color;
-	text-decoration: none;
-	width: 170px;
 }

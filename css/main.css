@@ -177,7 +177,7 @@ img {
   height: auto;
 }
 
-.header-link {
+.dark-button, .light-button, .appointment-submit-button, .header-link {
   display: inline-block;
   text-decoration: none;
 }
@@ -235,7 +235,6 @@ img {
 }
 
 .dark-button, .light-button, .appointment-submit-button {
-  display: block;
   margin: 0;
   padding: 12px 20px;
   min-width: 160px;
@@ -249,8 +248,10 @@ img {
   border: 1px solid #ff6c00;
   border-radius: 25px;
   cursor: pointer;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .dark-button:hover, .light-button:hover, .appointment-submit-button:hover, .dark-button:focus, .light-button:focus, .appointment-submit-button:focus {
@@ -260,14 +261,10 @@ img {
 
 .dark-button {
   color: #ffffff;
-  text-decoration: none;
-  width: 170px;
 }
 
 .light-button {
   color: #303030;
-  text-decoration: none;
-  width: 170px;
 }
 
 .decorative-line {
@@ -481,14 +478,12 @@ img {
 .header-contact-button {
   margin-top: 24px;
   margin-bottom: 64px;
-  width: 194px;
 }
 
 @media screen and (min-width: 768px) {
   .header-contact-button {
     margin: 0;
     color: #ffffff;
-    width: 170px;
   }
 }
 
@@ -1182,8 +1177,7 @@ img {
 }
 
 .button-prices {
-  margin-right: auto;
-  margin-left: auto;
+  text-align: center;
 }
 
 .prices-line {

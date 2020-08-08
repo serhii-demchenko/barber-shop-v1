@@ -17,7 +17,6 @@
 		background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
 			url(../images/prices/prices-mobile@3x.jpg);
 	}
-
 	@media (min-width: $tablet) {
 		background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
 			url(../images/prices/prices-tablet.jpg);
@@ -34,7 +33,6 @@
 				url(../images/prices/prices-tablet@3x.jpg);
 		}
 	}
-
 	@media (min-width: $desktop) {
 		background-image: linear-gradient(to right, rgba(17, 19, 25, 0.8), rgba(17, 19, 25, 0.8)),
 			url(../images/prices/prices-desktop.jpg);
@@ -52,17 +50,14 @@
 		}
 	}
 }
-
 .prices-subtitle {
 	@extend %section-subtitle;
 	color: $header-prices-subtitle-color;
 }
-
 .prices-title {
 	@extend %section-title;
 	color: $primary-background-color;
 }
-
 .prices-list {
 	@extend %reset-list;
 	background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
@@ -74,7 +69,6 @@
 		padding: 0;
 	}
 }
-
 .prices-list-one {
 	margin-bottom: 20px;
 	@media screen and (min-width: $desktop) {
@@ -83,7 +77,6 @@
 		margin-bottom: 0;
 	}
 }
-
 .prices-list-two {
 	@media screen and (min-width: $desktop) {
 		width: 585px;
@@ -91,7 +84,6 @@
 		background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 	}
 }
-
 .prices-item {
 	display: flex;
 	margin-bottom: 20px;
@@ -108,10 +100,8 @@
 	}
 }
 .button-prices {
-	margin-right: auto;
-	margin-left: auto;
+	text-align: center;
 }
-
 .prices-line {
 	flex-grow: 1;
 	margin-left: 6px;
