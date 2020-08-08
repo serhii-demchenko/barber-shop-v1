@@ -1,31 +1,13 @@
-// Menu opener hamburger
-// $(function(){
+(() => {
+	const menuBtnRef = document.querySelector("[data-menu-button]");
+	const mobileMenuRef = document.querySelector("[data-menu]");
 
-//     $('.menuBurger').on('click', function(){
+	menuBtnRef.addEventListener("click", () => {
+		const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
 
-//         $('.header-wrapper').slideToggle(300, function(){
+		menuBtnRef.classList.toggle("menu-button--is-open");
+		menuBtnRef.setAttribute("aria-expanded", !expanded);
 
-//             if($(this).css('display') === 'none'){
-//                 $(this).removeAttr('style');
-//         }
-
-//     });
-
-//  });
-
-// });
-
-// (() => {
-//     const refs = {
-//       openModalBtn: document.querySelector('[data-modal-open]'),
-//       closeModalBtn: document.querySelector('[data-modal-close]'),
-//       modal: document.querySelector('[data-modal]'),
-//     };
-
-//     refs.openModalBtn.addEventListener('click', toggleModal);
-//     refs.closeModalBtn.addEventListener('click', toggleModal);
-
-//     function toggleModal() {
-//       refs.modal.classList.toggle('is-hidden');
-//     }
-//   })();
+		mobileMenuRef.classList.toggle("header__menu--is-open");
+	});
+})();
