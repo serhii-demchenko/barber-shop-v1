@@ -67,16 +67,23 @@ img {
 }
 
 %section-title {
+	margin-bottom: 44px;
+
+	font-family: $secondary-font;
+	font-weight: 700;
 	font-size: 42px;
 	line-height: 1.17;
 	letter-spacing: 0.05em;
-	margin-bottom: 44px;
+	color: $title-text-color;
 }
 
 %section-subtitle {
+	margin-bottom: 20px;
+
 	font-weight: 600;
 	font-size: 11px;
 	line-height: 1.36;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
+	color: $title-text-color;
 }

@@ -214,19 +214,24 @@ img {
   }
 }
 
-.section-title, .why-us .title, .command-title, .appointment-title, .footer-contacts-title {
+.about-us-title, .prices-title, .why-us-title, .command-title, .appointment-title, .footer-contacts-title {
+  margin-bottom: 44px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
-  margin-bottom: 44px;
+  color: #303030;
 }
 
-.about-us .subtitle, .subtitle, .why-us .subtitle, .command-subtitle, .portfolio-subtitle, .footer-timetable-title {
+.about-us-subtitle, .prices-subtitle, .why-us-subtitle, .command-subtitle, .portfolio-subtitle, .footer-timetable-title {
+  margin-bottom: 20px;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  color: #303030;
 }
 
 .dark-button, .light-button, .appointment-submit-button {
@@ -956,12 +961,16 @@ img {
   }
 }
 
-.about-us .about-us-img {
+.about-us .light-button {
+  margin-top: 40px;
+}
+
+.about-us-img {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .about-us .about-us-img {
+  .about-us-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -971,16 +980,16 @@ img {
             flex-direction: column;
     margin-right: 30px;
   }
-  .about-us .about-us-img picture {
+  .about-us-img picture {
     width: 330px;
   }
-  .about-us .about-us-img picture + picture {
+  .about-us-img picture + picture {
     margin-top: 30px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .about-us .about-us-img {
+  .about-us-img {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -990,33 +999,27 @@ img {
             justify-content: space-between;
     margin-right: 64px;
   }
-  .about-us .about-us-img picture {
+  .about-us-img picture {
     width: 270px;
   }
-  .about-us .about-us-img picture + picture {
+  .about-us-img picture + picture {
     margin-top: 0;
     margin-left: 30px;
   }
 }
 
-.about-us .subtitle {
-  color: #303030;
-  margin-bottom: 20px;
-}
-
-.about-us .section-title {
-  color: #303030;
+.about-us-title {
   margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1279px) {
-  .about-us .section-title {
+  .about-us-title {
     font-size: 28px;
-    line-height: 33px;
+    line-height: 1.18;
   }
 }
 
-.about-us .text-description-first {
+.text-description-first {
   margin-bottom: 20px;
   font-size: 16px;
   line-height: 26px;
@@ -1025,20 +1028,16 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .about-us .text-description-first {
+  .text-description-first {
     font-size: 18px;
     line-height: 30px;
   }
 }
 
-.about-us .text-description-second {
+.text-description-second {
   font-size: 14px;
   line-height: 26px;
   letter-spacing: 0.02em;
-}
-
-.about-us .light-button {
-  margin-top: 40px;
 }
 
 .prices {
@@ -1105,12 +1104,11 @@ img {
   }
 }
 
-.subtitle {
+.prices-subtitle {
   color: rgba(157, 164, 189, 0.6);
-  margin-bottom: 20px;
 }
 
-.section-title {
+.prices-title {
   color: #ffffff;
 }
 
@@ -1189,10 +1187,14 @@ img {
   border-bottom: 1px solid rgba(157, 164, 189, 0.12);
 }
 
-.why-us .title,
-.why-us .subtitle {
+.why-us-title {
   margin-bottom: 20px;
-  color: #303030;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .why-us-title {
+    padding-right: 268px;
+  }
 }
 
 .why-us-description {
@@ -1359,16 +1361,6 @@ img {
   }
 }
 
-.command-subtitle {
-  color: #303030;
-  margin-bottom: 20px;
-}
-
-.command-title {
-  font-family: "Raleway", sans-serif;
-  color: #303030;
-}
-
 @media screen and (min-width: 768px) {
   .command {
     display: -webkit-box;
@@ -1466,11 +1458,6 @@ img {
   display: none;
 }
 
-.portfolio-subtitle {
-  color: #303030;
-  margin-bottom: 44px;
-}
-
 @media screen and (min-width: 768px) {
   .portfolio {
     display: -webkit-box;
@@ -1533,8 +1520,6 @@ img {
 }
 
 .appointment-title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
   color: #ffffff;
   white-space: nowrap;
 }
@@ -1789,8 +1774,6 @@ img {
 }
 
 .footer-contacts-title {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
   color: #ffffff;
   white-space: nowrap;
 }
@@ -1869,7 +1852,6 @@ img {
 }
 
 .footer-timetable-title {
-  margin-bottom: 20px;
   color: #ffffff;
 }
 

@@ -53,13 +53,12 @@
 	}
 }
 
-.subtitle {
+.prices-subtitle {
 	@extend %section-subtitle;
 	color: $header-prices-subtitle-color;
-	margin-bottom: 20px;
 }
 
-.section-title {
+.prices-title {
 	@extend %section-title;
 	color: $primary-background-color;
 }
@@ -78,7 +77,7 @@
 
 .prices-list-one {
 	margin-bottom: 20px;
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: $desktop) {
 		width: 585px;
 		padding: 30px 40px;
 		margin-bottom: 0;
@@ -86,7 +85,7 @@
 }
 
 .prices-list-two {
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: $desktop) {
 		width: 585px;
 		padding: 30px 40px;
 		background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
@@ -103,7 +102,7 @@
 		margin-bottom: 0;
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: $tablet) {
 		font-size: 18px;
 		line-height: 1.67;
 	}

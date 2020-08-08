@@ -10,13 +10,9 @@
 }
 .command-subtitle {
 	@extend %section-subtitle;
-	color: $title-text-color;
-	margin-bottom: 20px;
 }
 .command-title {
 	@extend %section-title;
-	font-family: $secondary-font;
-	color: $title-text-color;
 }
 
 .command {

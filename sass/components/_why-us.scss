@@ -1,18 +1,16 @@
 .why-us {
 	@extend %content-container;
 
-	.subtitle {
+	&-subtitle {
 		@extend %section-subtitle;
 	}
 
-	.title {
+	&-title {
 		@extend %section-title;
-	}
-
-	.title,
-	.subtitle {
 		margin-bottom: 20px;
-		color: $title-text-color;
+		@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+			padding-right: 268px;
+		}
 	}
 
 	&-description {

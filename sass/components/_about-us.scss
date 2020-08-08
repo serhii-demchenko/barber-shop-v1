@@ -1,73 +1,64 @@
 .about-us {
 	@extend %content-container;
-
 	@media screen and (min-width: $tablet) {
 		display: flex;
 	}
-
-	.about-us-img {
-		display: none;
-		@media screen and (min-width: $tablet) {
-			display: flex;
-			flex-direction: column;
-			margin-right: 30px;
-			picture {
-				width: 330px;
-			}
-			picture + picture {
-				margin-top: 30px;
-			}
-		}
-		@media screen and (min-width: $desktop) {
-			flex-direction: row;
-			justify-content: space-between;
-			margin-right: 64px;
-			picture {
-				width: 270px;
-			}
-			picture + picture {
-				margin-top: 0;
-				margin-left: 30px;
-			}
-		}
-	}
-
-	.subtitle {
-		@extend %section-subtitle;
-		color: $title-text-color;
-		margin-bottom: 20px;
-	}
-
-	.section-title {
-		color: $title-text-color;
-		margin-bottom: 20px;
-
-		@media screen and (max-width: 1279px) {
-			font-size: 28px;
-			line-height: 33px;
-		}
-	}
-
-	.text-description-first {
-		margin-bottom: 20px;
-
-		font-size: 16px;
-		line-height: 26px;
-		letter-spacing: 0.02em;
-		color: $title-text-color;
-
-		@media screen and (min-width: $desktop) {
-			font-size: 18px;
-			line-height: 30px;
-		}
-	}
-	.text-description-second {
-		font-size: 14px;
-		line-height: 26px;
-		letter-spacing: 0.02em;
-	}
-
 	.light-button {
 		margin-top: 40px;
 	}
+}
+.about-us-img {
+	display: none;
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-direction: column;
+		margin-right: 30px;
+		picture {
+			width: 330px;
+		}
+		picture + picture {
+			margin-top: 30px;
+		}
+	}
+	@media screen and (min-width: $desktop) {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-right: 64px;
+		picture {
+			width: 270px;
+		}
+		picture + picture {
+			margin-top: 0;
+			margin-left: 30px;
+		}
+	}
+}
+.about-us-title {
+	@extend %section-title;
+	margin-bottom: 20px;
+	@media screen and (max-width: $desktop - 1px) {
+		font-size: 28px;
+		line-height: 1.18;
+	}
+}
+.about-us-subtitle {
+	@extend %section-subtitle;
+}
+.text-description-first {
+	margin-bottom: 20px;
+
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.02em;
+	color: $title-text-color;
+
+	@media screen and (min-width: $desktop) {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
+.text-description-second {
+	font-size: 14px;
+	line-height: 26px;
+	letter-spacing: 0.02em;
 }

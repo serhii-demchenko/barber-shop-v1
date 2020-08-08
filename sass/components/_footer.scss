@@ -71,8 +71,6 @@ footer {
 .footer-contacts-title {
 	@extend %section-title;
 
-	font-family: $secondary-font;
-	font-weight: 700;
 	color: $primary-background-color;
 	white-space: nowrap;
 
@@ -81,7 +79,7 @@ footer {
 	}
 }
 .footer-contacts-tablet {
-	@media screen and (min-width: $tablet) and (max-width: 1279px) {
+	@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
@@ -127,8 +125,6 @@ footer {
 	}
 }
 .footer-timetable-title {
-	margin-bottom: 20px;
-
 	@extend %section-subtitle;
 	color: $primary-background-color;
 

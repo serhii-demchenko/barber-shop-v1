@@ -12,9 +12,6 @@
 }
 .appointment-title {
 	@extend %section-title;
-
-	font-family: $secondary-font;
-	font-weight: 700;
 	color: $primary-background-color;
 	white-space: nowrap;
 }
