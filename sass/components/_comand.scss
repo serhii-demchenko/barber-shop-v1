@@ -80,8 +80,7 @@
 	border-radius: 50%;
 	background-color: $primary-background-color;
 	color: $title-text-color;
-
-	transition: color $animation-duration $animation-timing-function;
+	@include transition(color);
 	&:hover,
 	&:focus {
 		color: $accent-color;
