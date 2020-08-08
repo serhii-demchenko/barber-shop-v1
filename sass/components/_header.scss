@@ -4,7 +4,7 @@
 	height: 580px;
 	margin-left: auto;
 	margin-right: auto;
-	overflow-x: hidden;
+	overflow: hidden;
 	transition: 0.5s;
 	transition-duration: $animation-duration;
 	transition-timing-function: $animation-timing-function;
@@ -16,7 +16,6 @@
 		max-width: $desktop;
 	}
 	@media screen and (min-width: $tablet) {
-		margin-left: 159px;
 		height: 680px;
 	}
 }
@@ -24,12 +23,36 @@
 .header .container {
 	@extend %content-container;
 	padding-top: 40px;
+	@media screen and (min-width: $tablet) {
+		padding: 0;
+		width: $tablet - 120px - 20px;
+		margin-left: 120px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: $desktop - 155px;
+		margin-left: 155px;
+	}
 }
 .header li {
 	@extend %reset-list;
 }
 .header-link {
 	@extend %reset-link;
+	color: $main-text-color;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	transition-property: color;
+	transition-duration: $animation-duration;
+	transition-timing-function: $animation-timing-function;
+
+	&:hover,
+	&:active {
+		color: $accent-color;
+	}
 }
 .header-navigation {
 	position: relative;
@@ -49,8 +72,8 @@
 	fill: currentColor;
 	color: #ffffff;
 }
-@media screen and (max-width: 767px) {
-	.header-wrapper {
+.header-wrapper {
+	@media screen and (max-width: $tablet - 1px) {
 		display: none; /* пункты меню скрыты */
 		z-index: 1;
 		background: #ffffff;
@@ -61,14 +84,32 @@
 		padding: 118px 40px 227px;
 		width: 337px;
 	}
-	.header-wrapper {
-		@media screen and (min-width: $tablet) {
-			display: flex;
-			padding: 0;
-		}
+
+	@media screen and (min-width: $tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: flex-end;
+		padding-left: 0;
+		margin: 0;
+	}
+	@media screen and (min-width: $desktop) {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
 	}
 	.menu__item {
-		float: none; /* пункты меню в столбцах */
+		@media screen and (max-width: $tablet - 1px) {
+			float: none; /* пункты меню в столбцах */
+		}
+		&.menu-order {
+			@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+				order: 1;
+			}
+			@media screen and (min-width: $desktop) {
+				margin-left: auto;
+				margin-right: 40px;
+			}
+		}
 	}
 
 	.menuBurger {
@@ -80,23 +121,6 @@
 	display: none;
 }
 
-.header-link {
-	color: $main-text-color;
-	font-style: normal;
-	font-weight: 600;
-	font-size: 18px;
-	line-height: 25px;
-	text-align: center;
-	letter-spacing: 0.1em;
-	transition-property: color;
-	transition-duration: $animation-duration;
-	transition-timing-function: $animation-timing-function;
-
-	&:hover,
-	&:active {
-		color: $accent-color;
-	}
-}
 .menu__item ul {
 	padding: 0;
 }
@@ -110,6 +134,10 @@
 		color: $primary-background-color;
 		margin-top: 20px;
 		margin-right: 19px;
+	}
+	@media screen and (min-width: $desktop) {
+		margin-top: 0;
+		margin-right: 0;
 	}
 }
 .header-contact-button {
@@ -136,7 +164,6 @@
 	padding-left: 80px;
 }
 
-// Это я дописал
 .header__menu-button {
 	position: absolute;
 	padding: 12px 8px;
@@ -151,14 +178,17 @@
 		display: none;
 	}
 }
-.menu-buton__close {
+.menu-button__close {
 	opacity: 0;
 }
+.menu-button__open {
+	fill: $primary-background-color;
+}
 .menu-button--is-open {
-	.menu-buton__close {
+	.menu-button__close {
 		opacity: 1;
 	}
-	.menu-buton__open {
+	.menu-button__open {
 		opacity: 0;
 	}
 }
@@ -172,21 +202,31 @@
 
 //header-content
 .header-content {
-	width: 306px;
-	margin: 112px 31px 183px;
+	padding-top: 112px;
+	padding-right: 112px;
 	@media screen and (min-width: $tablet) {
-		width: 355px;
-		margin: 150px 134px 240px 120px;
+		padding-top: 120px;
+		padding-left: 156px;
+		padding-right: 104px;
+	}
+	@media screen and (min-width: $desktop) {
+		padding-top: 184px;
+		padding-left: 100px;
+		padding-right: 525px;
 	}
 }
 .header-title {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 48px;
-	line-height: 56px;
+	line-height: 1.17;
 	letter-spacing: 0.05em;
 	margin: 20px 0;
 	color: #ffffff;
+	@media screen and (min-width: $desktop) {
+		font-size: 72px;
+		line-height: 1.18;
+	}
 }
 .header-content-subtitle {
 	font-style: normal;
@@ -204,6 +244,9 @@
 	line-height: 26px;
 	letter-spacing: 0.02em;
 	color: $header-prices-footer-gray-color;
+	@media screen and (min-width: $desktop) {
+		padding-right: 100px;
+	}
 }
 
 //header-sidebar
@@ -216,25 +259,28 @@
 		align-items: baseline;
 		justify-content: space-around;
 		background-color: #ffffff;
-		width: 159px;
+		width: 120px;
 		height: 100%;
 		top: 0;
 		left: 0;
+	}
+	@media screen and (min-width: $desktop) {
+		left: 35px;
 	}
 }
 .sidebar-logo {
 	margin-top: 32px;
 	margin-bottom: 282px;
 }
-.header .container {
-	@media screen and (min-width: $tablet) {
-		display: flex;
-		padding: 0;
-	}
-}
+
 .sidebar-socials {
 	display: flex;
 	transform: rotate(-90deg);
+}
+.sidebar-socials-link {
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
 }
 .header-menu {
 	@media screen and (min-width: $tablet) {
@@ -253,29 +299,22 @@
 		}
 	}
 }
-.header-wrapper {
-	@media screen and (min-width: $tablet) {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: baseline;
-		justify-content: flex-end;
-		margin: 0;
-	}
-}
+
 .header-main {
 	@media screen and (min-width: $tablet) {
 		width: 609px;
 	}
-}
-
-.menu-order {
-	@media screen and (min-width: $tablet) {
-		order: 1;
-		margin-top: 20px;
+	@media screen and (min-width: $desktop) {
+		width: 1125px;
 	}
 }
+
 .wrapper {
 	@media screen and (min-width: $tablet) {
+		width: 100%;
 		padding: 40px 29px 0 24px;
+	}
+	@media screen and (min-width: $desktop) {
+		padding: 40px 55px 0 40px;
 	}
 }

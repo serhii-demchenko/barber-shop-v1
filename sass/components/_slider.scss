@@ -6,9 +6,11 @@
 	width: 100%;
 	height: 100%;
 	@media screen and(min-width:$tablet) {
+		width: $tablet - 120px - 20px;
 		left: 120px;
 	}
-	@media screen and(min-width:$tablet) {
+	@media screen and(min-width:$desktop) {
+		width: $desktop - 155px;
 		left: 155px;
 	}
 }
@@ -16,7 +18,7 @@
 	max-width: $mobile;
 	height: 580px;
 	@media screen and(min-width:$tablet) {
-		width: $tablet - 120px;
+		width: $tablet - 120px - 20px;
 		height: 680px;
 	}
 	@media screen and(min-width:$desktop) {
