@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	$(".header-slider").slick({
-		dots: false,
+		dots: true,
 		infinite: true,
 		speed: 300,
 		slidesToShow: 1,
@@ -8,5 +8,12 @@ $(document).ready(function () {
 		autoplay: true,
 		autoplaySpeed: 1500,
 		arrows: true,
+	});
+	// плавное перемещение страницы к нужному блоку
+	$("a.go").click(function (e) {
+		e.preventDefault();
+		elementClick = $(this).attr("href");
+		destination = $(elementClick).offset().top;
+		$("body,html").animate({ scrollTop: destination }, 800);
 	});
 });

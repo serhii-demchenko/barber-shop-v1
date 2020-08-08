@@ -5,6 +5,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	overflow: hidden;
+	z-index: 1;
 	transition: 0.5s;
 	transition-duration: $animation-duration;
 	transition-timing-function: $animation-timing-function;
@@ -65,11 +66,7 @@
 		display: none;
 	}
 }
-.menuBurger {
-	display: none; /* иконка гамбургер скрыта */
-	fill: currentColor;
-	color: #ffffff;
-}
+
 .header-wrapper {
 	@media screen and (max-width: $tablet - 1px) {
 		display: none; /* пункты меню скрыты */
@@ -95,23 +92,20 @@
 		flex-wrap: nowrap;
 		justify-content: flex-start;
 	}
-	.menu__item {
-		@media screen and (max-width: $tablet - 1px) {
-			float: none; /* пункты меню в столбцах */
-		}
-		&.menu-order {
-			@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
-				order: 1;
-			}
-			@media screen and (min-width: $desktop) {
-				margin-left: auto;
-				margin-right: 40px;
-			}
-		}
-	}
+}
 
-	.menuBurger {
-		display: inline-block; /* иконка гамбургер видна */
+.menu__item {
+	@media screen and (max-width: $tablet - 1px) {
+		float: none; /* пункты меню в столбцах */
+	}
+	&.menu-order {
+		@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+			order: 1;
+		}
+		@media screen and (min-width: $desktop) {
+			margin-left: auto;
+			margin-right: 40px;
+		}
 	}
 }
 
@@ -160,42 +154,10 @@
 }
 .header-link-youtube {
 	padding-left: 80px;
-}
-
-.header__menu-button {
-	position: absolute;
-	padding: 12px 8px;
-	top: 0;
-	right: 0;
-	width: 40px;
-	height: 40px;
-	background-color: transparent;
-	border: none;
-	z-index: 100;
+	padding-top: 24px;
 	@media screen and (min-width: $tablet) {
-		display: none;
+		padding-top: 0;
 	}
-}
-.menu-button__close {
-	opacity: 0;
-}
-.menu-button__open {
-	fill: $primary-background-color;
-}
-.menu-button--is-open {
-	.menu-button__close {
-		opacity: 1;
-	}
-	.menu-button__open {
-		opacity: 0;
-	}
-}
-.header__menu--is-open {
-	display: block;
-}
-.menu-buton__open {
-	fill: currentColor;
-	color: $primary-background-color;
 }
 
 //header-content
@@ -244,75 +206,5 @@
 	color: $header-prices-footer-gray-color;
 	@media screen and (min-width: $desktop) {
 		padding-right: 100px;
-	}
-}
-
-//header-sidebar
-.header-sidebar {
-	display: none;
-	@media screen and (min-width: $tablet) {
-		position: absolute;
-		display: flex;
-		flex-wrap: wrap;
-		align-items: baseline;
-		justify-content: space-around;
-		background-color: #ffffff;
-		width: 120px;
-		height: 100%;
-		top: 0;
-		left: 0;
-	}
-	@media screen and (min-width: $desktop) {
-		left: 35px;
-	}
-}
-.sidebar-logo {
-	margin-top: 32px;
-	margin-bottom: 282px;
-}
-
-.sidebar-socials {
-	display: flex;
-	transform: rotate(-90deg);
-}
-.sidebar-socials-link {
-	font-size: 11px;
-	line-height: 1.36;
-	letter-spacing: 0.2em;
-}
-.header-menu {
-	@media screen and (min-width: $tablet) {
-		display: flex;
-	}
-	&-link {
-		@media screen and (min-width: $tablet) {
-			display: flex;
-			font-style: normal;
-			font-weight: 600;
-			font-size: 12px;
-			line-height: 16px;
-			letter-spacing: 0.1em;
-			margin-right: 24px;
-			color: #ffffff;
-		}
-	}
-}
-
-.header-main {
-	@media screen and (min-width: $tablet) {
-		width: 609px;
-	}
-	@media screen and (min-width: $desktop) {
-		width: 1125px;
-	}
-}
-
-.wrapper {
-	@media screen and (min-width: $tablet) {
-		width: 100%;
-		padding: 40px 29px 0 24px;
-	}
-	@media screen and (min-width: $desktop) {
-		padding: 40px 55px 0 40px;
 	}
 }

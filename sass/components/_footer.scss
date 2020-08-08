@@ -128,9 +128,9 @@ footer {
 	@extend %section-subtitle;
 	color: $primary-background-color;
 
-	&.decorative-line:before {
-		color: $form-text-color;
-	}
+	// &.decorative-line:before {
+	// 	color: $form-text-color;
+	// }
 }
 .footer-timetable-text {
 	font-size: 18px;
@@ -157,9 +157,6 @@ footer {
 	@media screen and (min-width: $tablet) {
 		top: 56px;
 	}
-	&.decorative-line {
-		padding-left: 100px;
-	}
 }
 .footer-social-media-item {
 	margin-right: 40px;
@@ -171,6 +168,14 @@ footer {
 	font-size: 11px;
 	line-height: 1.36;
 	color: $title-text-color;
+	&:hover,
+	&:focus,
+	&:active {
+		color: $accent-color;
+	}
+	&.decorative-line {
+		padding-left: 100px;
+	}
 }
 .footer-copyright {
 	position: absolute;

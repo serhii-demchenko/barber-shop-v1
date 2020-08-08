@@ -1,0 +1,68 @@
+.header-sidebar {
+	display: none;
+	@media screen and (min-width: $tablet) {
+		position: absolute;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-around;
+		background-color: #ffffff;
+		width: 120px;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+	@media screen and (min-width: $desktop) {
+		left: 35px;
+	}
+}
+.sidebar-logo {
+	margin-top: 32px;
+	margin-bottom: 282px;
+}
+
+.sidebar-socials {
+	display: flex;
+	transform: rotate(-90deg);
+}
+.sidebar-socials-link {
+	font-size: 11px;
+	line-height: 1.36;
+	letter-spacing: 0.2em;
+}
+.header-menu {
+	@media screen and (min-width: $tablet) {
+		display: flex;
+	}
+	&-link {
+		@media screen and (min-width: $tablet) {
+			display: flex;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 12px;
+			line-height: 16px;
+			letter-spacing: 0.1em;
+			margin-right: 24px;
+			color: #ffffff;
+		}
+	}
+}
+
+.header-main {
+	@media screen and (min-width: $tablet) {
+		width: 609px;
+	}
+	@media screen and (min-width: $desktop) {
+		width: 1125px;
+	}
+}
+
+.wrapper {
+	@media screen and (min-width: $tablet) {
+		width: 100%;
+		padding: 40px 29px 0 24px;
+	}
+	@media screen and (min-width: $desktop) {
+		padding: 40px 55px 0 40px;
+	}
+}

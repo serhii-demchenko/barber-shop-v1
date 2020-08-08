@@ -1,5 +1,5 @@
 %button {
-	display: block;
+	@extend %reset-link;
 	margin: 0;
 	padding: 12px 20px;
 	min-width: 160px;
