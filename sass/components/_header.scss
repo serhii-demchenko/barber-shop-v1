@@ -37,6 +37,11 @@
 .header li {
 	@extend %reset-list;
 }
+.header-menu-item {
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+}
 .header-link {
 	@extend %reset-link;
 	color: $main-text-color;

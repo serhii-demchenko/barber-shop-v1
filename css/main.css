@@ -336,6 +336,10 @@ img {
   }
 }
 
+.header-menu-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
 .header-link {
   color: #555555;
   font-style: normal;
