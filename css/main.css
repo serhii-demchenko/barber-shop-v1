@@ -857,23 +857,36 @@ img {
 
 @media screen and (min-width: 768px) {
   .slick-dots {
-    width: 45px;
+    width: 35px;
     height: 18px;
     z-index: 10;
-    bottom: 325px;
+    bottom: 330px;
     right: 39px;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
   }
   .slick-dots li {
     width: 10px;
+    height: 100%;
   }
   .slick-dots li button::before {
     content: "";
     width: 2px;
-    height: 10px;
+    height: 8px;
+    top: -5px;
+    left: calc(50% - 1px);
+    border-radius: 2px;
     background-color: #fff;
+    -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+.slick-dots .slick-active button::before {
+  -webkit-transform: scaleY(2) translateY(2px);
+          transform: scaleY(2) translateY(2px);
 }
 
 .slick-prev, .slick-next {
