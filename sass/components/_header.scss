@@ -151,9 +151,12 @@
 	font-size: 14px;
 	line-height: 19px;
 	letter-spacing: 0.2em;
+	&.decorative-line {
+		padding-left: 100px;
+	}
 }
 .header-link-youtube {
-	padding-left: 80px;
+	padding-left: 100px;
 	padding-top: 24px;
 	@media screen and (min-width: $tablet) {
 		padding-top: 0;

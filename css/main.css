@@ -498,8 +498,12 @@ img {
   letter-spacing: 0.2em;
 }
 
+.header-socials-link.decorative-line {
+  padding-left: 100px;
+}
+
 .header-link-youtube {
-  padding-left: 80px;
+  padding-left: 100px;
   padding-top: 24px;
 }
 
@@ -998,10 +1002,18 @@ img {
           transform: rotate(-90deg);
 }
 
+.sidebar-socials .header-link-youtube {
+  padding-left: 40px;
+}
+
 .sidebar-socials-link {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
+}
+
+.sidebar-socials-link.decorative-line {
+  padding-left: 100px;
 }
 
 @media screen and (min-width: 768px) {

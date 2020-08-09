@@ -24,11 +24,17 @@
 .sidebar-socials {
 	display: flex;
 	transform: rotate(-90deg);
+	.header-link-youtube {
+		padding-left: 40px;
+	}
 }
 .sidebar-socials-link {
 	font-size: 11px;
 	line-height: 1.36;
 	letter-spacing: 0.2em;
+	&.decorative-line {
+		padding-left: 100px;
+	}
 }
 .header-menu {
 	@media screen and (min-width: $tablet) {
