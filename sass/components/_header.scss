@@ -168,26 +168,29 @@
 //header-content
 .header-content {
 	padding-top: 112px;
-	padding-right: 112px;
+	max-width: 320px;
 	@media screen and (min-width: $tablet) {
 		padding-top: 120px;
 		padding-left: 156px;
-		padding-right: 104px;
+		max-width: 510px;
 	}
 	@media screen and (min-width: $desktop) {
 		padding-top: 184px;
 		padding-left: 100px;
-		padding-right: 525px;
+		max-width: 600px;
 	}
 }
 .header-title {
 	font-style: normal;
 	font-weight: bold;
-	font-size: 48px;
+	font-size: 40px;
 	line-height: 1.17;
 	letter-spacing: 0.05em;
 	margin: 20px 0;
 	color: #ffffff;
+	@media screen and (min-width: $mobile) {
+		font-size: 48px;
+	}
 	@media screen and (min-width: $desktop) {
 		font-size: 72px;
 		line-height: 1.18;
