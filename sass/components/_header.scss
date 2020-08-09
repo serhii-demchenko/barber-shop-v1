@@ -95,9 +95,6 @@
 }
 
 .menu__item {
-	@media screen and (max-width: $tablet - 1px) {
-		float: none; /* пункты меню в столбцах */
-	}
 	&.menu-order {
 		@media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
 			order: 1;
