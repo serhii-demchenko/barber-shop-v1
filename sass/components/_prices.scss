@@ -62,14 +62,18 @@
 	@extend %reset-list;
 	background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 	color: $header-prices-footer-gray-color;
-	padding: 30px;
+	padding: 20px 15px;
 	margin-bottom: 50px;
-	@media screen and (min-width: 1280px) {
+	@media screen and (min-width: 410px) {
+		padding: 30px;
+	}
+	@media screen and (min-width: $desktop) {
 		display: inline-flex;
 		padding: 0;
 	}
 }
 .prices-list-one {
+	padding-left: 0;
 	margin-bottom: 20px;
 	@media screen and (min-width: $desktop) {
 		width: 585px;
@@ -78,6 +82,7 @@
 	}
 }
 .prices-list-two {
+	padding-left: 0;
 	@media screen and (min-width: $desktop) {
 		width: 585px;
 		padding: 30px 40px;
@@ -88,12 +93,14 @@
 	display: flex;
 	margin-bottom: 20px;
 	align-items: baseline;
-	font-size: 14px;
+	font-size: 11px;
 	line-height: 2.14;
 	&:last-child {
 		margin-bottom: 0;
 	}
-
+	@media screen and (min-width: 376px) {
+		font-size: 14px;
+	}
 	@media screen and (min-width: $tablet) {
 		font-size: 18px;
 		line-height: 1.67;

@@ -218,10 +218,16 @@ img {
   margin-bottom: 44px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 30px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   color: #303030;
+}
+
+@media screen and (min-width: 480px) {
+  .about-us-title, .prices-title, .why-us-title, .command-title, .appointment-title, .footer-contacts-title {
+    font-size: 42px;
+  }
 }
 
 .about-us-subtitle, .prices-subtitle, .why-us-subtitle, .command-subtitle, .portfolio-subtitle, .footer-timetable-title {
@@ -512,14 +518,14 @@ img {
 
 .header-content {
   padding-top: 112px;
-  padding-right: 112px;
+  max-width: 320px;
 }
 
 @media screen and (min-width: 768px) {
   .header-content {
     padding-top: 120px;
     padding-left: 156px;
-    padding-right: 104px;
+    max-width: 510px;
   }
 }
 
@@ -527,18 +533,24 @@ img {
   .header-content {
     padding-top: 184px;
     padding-left: 100px;
-    padding-right: 525px;
+    max-width: 600px;
   }
 }
 
 .header-title {
   font-style: normal;
   font-weight: bold;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.05em;
   margin: 20px 0;
   color: #ffffff;
+}
+
+@media screen and (min-width: 480px) {
+  .header-title {
+    font-size: 48px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -1180,8 +1192,14 @@ img {
   background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
   color: #9da4bd;
-  padding: 30px;
+  padding: 20px 15px;
   margin-bottom: 50px;
+}
+
+@media screen and (min-width: 410px) {
+  .prices-list {
+    padding: 30px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -1194,6 +1212,7 @@ img {
 }
 
 .prices-list-one {
+  padding-left: 0;
   margin-bottom: 20px;
 }
 
@@ -1203,6 +1222,10 @@ img {
     padding: 30px 40px;
     margin-bottom: 0;
   }
+}
+
+.prices-list-two {
+  padding-left: 0;
 }
 
 @media screen and (min-width: 1280px) {
@@ -1222,12 +1245,18 @@ img {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  font-size: 14px;
+  font-size: 11px;
   line-height: 2.14;
 }
 
 .prices-item:last-child {
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 376px) {
+  .prices-item {
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 768px) {
