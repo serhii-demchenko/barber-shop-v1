@@ -2,6 +2,22 @@
 
 https://swok-kh.github.io/barber-shop-v1/
 
+# В поректе участвовали
+
+Serhii Demchenko https://github.com/Swok-Kh
+
+Anna Trubnikova https://github.com/trubo4ka911
+
+Yuliia Bevko https://github.com/Yuliia14
+
+Anastasia Zaikina https://github.com/AnastaciaZ
+
+Tetiana Svinar https://github.com/TetianaSv
+
+Katerina Tsulun https://github.com/ktsulun
+
+Alex Syrov https://github.com/AlexSyrov
+
 # Переменные
 
 \$main-text-color: #555555; - цвет основного текста
