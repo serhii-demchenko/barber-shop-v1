@@ -47,6 +47,7 @@
 	.mobile-menu {
 		@extend %reset-list;
 		width: 337px;
+		height: 100%;
 		margin: 0;
 		position: absolute;
 		top: 0;
@@ -55,6 +56,11 @@
 		overflow-y: scroll;
 		background-color: $primary-background-color;
 		padding: 118px 0 118px 40px;
+		transform: translateX(480px);
+		@include transition(transform);
+		&-animation {
+			transform: translate(0);
+		}
 	}
 	.mobile-menu-button {
 		position: absolute;
