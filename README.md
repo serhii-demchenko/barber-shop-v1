@@ -2,7 +2,7 @@
 
 https://swok-kh.github.io/barber-shop-v1/
 
-# В поректе участвовали
+# В проекте участвовали
 
 Serhii Demchenko https://github.com/Swok-Kh
 
