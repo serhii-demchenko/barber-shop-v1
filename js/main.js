@@ -11,4 +11,7 @@
 	function toggleModal() {
 		refs.modal.classList.toggle("overlay-is-hidden");
 	}
+	refs.modal.addEventListener("click", ({ target }) => {
+		target.getAttribute("data-modal-link") === "" && toggleModal();
+	});
 })();
