@@ -85,6 +85,7 @@
 	color: $form-text-color;
 
 	@include transition(transform);
+	@include transition(color);
 
 	.appointment-input:focus + &,
 	.appointment-input:not(:placeholder-shown) + & {
