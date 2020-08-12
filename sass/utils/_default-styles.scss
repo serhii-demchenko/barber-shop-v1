@@ -22,6 +22,24 @@ body {
 .no-scroll {
 	overflow: hidden;
 }
+.scroll-up {
+	position: fixed;
+	right: 5px;
+	bottom: 10px;
+	&-link {
+		@extend %reset-link;
+		color: $header-prices-subtitle-color;
+		&:hover,
+		&:focus {
+			color: $accent-color;
+		}
+	}
+	&-icon {
+		width: 25px;
+		height: 25px;
+		fill: currentColor;
+	}
+}
 p,
 h1,
 h2,

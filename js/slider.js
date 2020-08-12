@@ -16,4 +16,11 @@ $(document).ready(function () {
 		destination = $(elementClick).offset().top;
 		$("body,html").animate({ scrollTop: destination }, 800);
 	});
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 200) {
+			$(".scroll-up").fadeIn();
+		} else {
+			$(".scroll-up").fadeOut();
+		}
+	});
 });

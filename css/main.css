@@ -164,6 +164,26 @@ body {
   overflow: hidden;
 }
 
+.scroll-up {
+  position: fixed;
+  right: 5px;
+  bottom: 10px;
+}
+
+.scroll-up-link {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.scroll-up-link:hover, .scroll-up-link:focus {
+  color: #ff6c00;
+}
+
+.scroll-up-icon {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+}
+
 p,
 h1,
 h2,
@@ -181,7 +201,7 @@ img {
   height: auto;
 }
 
-.dark-button, .light-button, .appointment-submit-button, .header-link, .overlay .nav-menu-link {
+.scroll-up-link, .dark-button, .light-button, .appointment-submit-button, .header-link, .overlay .nav-menu-link {
   display: inline-block;
   text-decoration: none;
 }
@@ -1784,6 +1804,9 @@ img {
 
 @media screen and (min-width: 1280px) {
   .desktop-footer {
+    width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
